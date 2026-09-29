@@ -1,0 +1,48 @@
+[project]
+name = "filingqa"
+version = "0.1.0"
+description = "Question answering over SEC 10-K filings with page-level citations, and an honest measurement harness."
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Emilio Gappa" }]
+requires-python = ">=3.11"
+dependencies = [
+    "httpx>=0.27",
+    "beautifulsoup4>=4.12",
+    "lxml>=5.0",
+    "rank-bm25>=0.2.2",
+    "numpy>=1.26",
+    "matplotlib>=3.8",
+]
+
+[project.optional-dependencies]
+anthropic = ["anthropic>=0.40"]
+
+[project.scripts]
+filingqa = "filingqa.cli:main"
+
+[dependency-groups]
+dev = ["pytest>=8", "ruff>=0.6"]
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/filingqa"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-m 'not network and not ollama'"
+markers = [
+    "network: talks to SEC EDGAR (skipped by default)",
+    "ollama: needs a local Ollama server (skipped by default)",
+]
+
+[tool.ruff]
+line-length = 100
+src = ["src", "tests"]
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]  # line length is left to `ruff format`

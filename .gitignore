@@ -1,0 +1,12 @@
+data/raw/
+data/index/
+data/cache/
+data/parsed/
+data/runs/
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ruff_cache/
+.env
+dist/
