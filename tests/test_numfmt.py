@@ -12,6 +12,11 @@ def test_millions_wording_matches_xbrl_raw_value():
     assert numeric_match("391035000000", APPLE_REVENUE)
 
 
+def test_near_miss_digit_errors_are_rejected():
+    assert not numeric_match("$13,137 million", 13107e6)
+    assert numeric_match("$13,107 million", 13107e6)
+
+
 def test_tolerance_and_mismatch():
     assert numeric_match("$391,100 million", APPLE_REVENUE, tol=0.005)
     assert not numeric_match("$391,100 million", APPLE_REVENUE, tol=0.0001)

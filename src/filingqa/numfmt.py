@@ -46,8 +46,12 @@ def extract_numbers(text: str) -> list[float]:
     return out
 
 
-def numeric_match(text: str, value: float, tol: float = 0.005) -> bool:
-    """True if any number in text equals value within relative tolerance (default 0.5%)."""
+def numeric_match(text: str, value: float, tol: float = 0.001) -> bool:
+    """True if any number in text equals value within relative tolerance (default 0.1%).
+
+    0.1% admits "$391.0 billion" for 391,035 million but rejects a transposed-digit near miss
+    such as 13,137 for 13,107.
+    """
     target = abs(value)
     return any(abs(abs(c) - target) <= tol * target for c in extract_numbers(text))
 
