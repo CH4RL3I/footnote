@@ -1,0 +1,642 @@
+[
+ {
+  "id": "AAPL-FY2024:revenue",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Apple's total revenue for fiscal year 2024?",
+  "value": 391035000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:net_income",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Apple's net income for fiscal year 2024?",
+  "value": 93736000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:total_assets",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were Apple's total assets at the end of fiscal year 2024?",
+  "value": 364980000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:rd_expense",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Apple spend on research and development in fiscal year 2024?",
+  "value": 31370000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:operating_cash_flow",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was Apple's net cash provided by operating activities in fiscal year 2024?",
+  "value": 118254000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:operating_income",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Apple's operating income for fiscal year 2024?",
+  "value": 123216000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:equity",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was Apple's total stockholders' equity at the end of fiscal year 2024?",
+  "value": 56950000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2025:revenue",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Apple's total revenue for fiscal year 2025?",
+  "value": 416161000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:net_income",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Apple's net income for fiscal year 2025?",
+  "value": 112010000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:total_assets",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were Apple's total assets at the end of fiscal year 2025?",
+  "value": 359241000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:rd_expense",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Apple spend on research and development in fiscal year 2025?",
+  "value": 34550000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:operating_cash_flow",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was Apple's net cash provided by operating activities in fiscal year 2025?",
+  "value": 111482000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:operating_income",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Apple's operating income for fiscal year 2025?",
+  "value": 133050000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:equity",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was Apple's total stockholders' equity at the end of fiscal year 2025?",
+  "value": 73733000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "JPM-FY2024:revenue",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was JPMorgan Chase's total revenue for fiscal year 2024?",
+  "value": 177556000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2024:net_income",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was JPMorgan Chase's net income for fiscal year 2024?",
+  "value": 58471000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2024:total_assets",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+  "value": 4002814000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2024:operating_cash_flow",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2024?",
+  "value": -42012000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2024:equity",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was JPMorgan Chase's total stockholders' equity at the end of fiscal year 2024?",
+  "value": 344758000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2025:revenue",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was JPMorgan Chase's total revenue for fiscal year 2025?",
+  "value": 182447000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "JPM-FY2025:net_income",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was JPMorgan Chase's net income for fiscal year 2025?",
+  "value": 57048000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "JPM-FY2025:total_assets",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2025?",
+  "value": 4424900000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "JPM-FY2025:operating_cash_flow",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2025?",
+  "value": -147782000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "JPM-FY2025:equity",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was JPMorgan Chase's total stockholders' equity at the end of fiscal year 2025?",
+  "value": 362438000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "KO-FY2024:revenue",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was Coca-Cola's total revenue for fiscal year 2024?",
+  "value": 47061000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2024:net_income",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Coca-Cola's net income for fiscal year 2024?",
+  "value": 10631000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2024:total_assets",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were Coca-Cola's total assets at the end of fiscal year 2024?",
+  "value": 100549000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2024:operating_cash_flow",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was Coca-Cola's net cash provided by operating activities in fiscal year 2024?",
+  "value": 6805000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2024:operating_income",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Coca-Cola's operating income for fiscal year 2024?",
+  "value": 9992000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2024:equity",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was Coca-Cola's total stockholders' equity at the end of fiscal year 2024?",
+  "value": 24856000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2025:revenue",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was Coca-Cola's total revenue for fiscal year 2025?",
+  "value": 47941000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "KO-FY2025:net_income",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Coca-Cola's net income for fiscal year 2025?",
+  "value": 13107000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "KO-FY2025:total_assets",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were Coca-Cola's total assets at the end of fiscal year 2025?",
+  "value": 104816000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "KO-FY2025:operating_cash_flow",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was Coca-Cola's net cash provided by operating activities in fiscal year 2025?",
+  "value": 7408000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "KO-FY2025:operating_income",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Coca-Cola's operating income for fiscal year 2025?",
+  "value": 13762000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "KO-FY2025:equity",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was Coca-Cola's total stockholders' equity at the end of fiscal year 2025?",
+  "value": 32169000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "MSFT-FY2025:revenue",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Microsoft's total revenue for fiscal year 2025?",
+  "value": 281724000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:net_income",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Microsoft's net income for fiscal year 2025?",
+  "value": 101832000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:total_assets",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were Microsoft's total assets at the end of fiscal year 2025?",
+  "value": 619003000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:rd_expense",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Microsoft spend on research and development in fiscal year 2025?",
+  "value": 32488000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:operating_cash_flow",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was Microsoft's net cash provided by operating activities in fiscal year 2025?",
+  "value": 136162000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:operating_income",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Microsoft's operating income for fiscal year 2025?",
+  "value": 128528000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:equity",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was Microsoft's total stockholders' equity at the end of fiscal year 2025?",
+  "value": 343479000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2026:revenue",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Microsoft's total revenue for fiscal year 2026?",
+  "value": 331839000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:net_income",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Microsoft's net income for fiscal year 2026?",
+  "value": 133749000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:total_assets",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were Microsoft's total assets at the end of fiscal year 2026?",
+  "value": 758376000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:rd_expense",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+  "value": 35562000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:operating_cash_flow",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was Microsoft's net cash provided by operating activities in fiscal year 2026?",
+  "value": 182935000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:operating_income",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Microsoft's operating income for fiscal year 2026?",
+  "value": 155237000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:equity",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was Microsoft's total stockholders' equity at the end of fiscal year 2026?",
+  "value": 442387000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "NVDA-FY2025:revenue",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was NVIDIA's total revenue for fiscal year 2025?",
+  "value": 130497000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:net_income",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was NVIDIA's net income for fiscal year 2025?",
+  "value": 72880000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:total_assets",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were NVIDIA's total assets at the end of fiscal year 2025?",
+  "value": 111601000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:rd_expense",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did NVIDIA spend on research and development in fiscal year 2025?",
+  "value": 12914000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:operating_cash_flow",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was NVIDIA's net cash provided by operating activities in fiscal year 2025?",
+  "value": 64089000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:operating_income",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was NVIDIA's operating income for fiscal year 2025?",
+  "value": 81453000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:equity",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was NVIDIA's total stockholders' equity at the end of fiscal year 2025?",
+  "value": 79327000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2026:revenue",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was NVIDIA's total revenue for fiscal year 2026?",
+  "value": 215938000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:net_income",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was NVIDIA's net income for fiscal year 2026?",
+  "value": 120067000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:total_assets",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "total_assets",
+  "tag": "Assets",
+  "question": "What were NVIDIA's total assets at the end of fiscal year 2026?",
+  "value": 206803000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:rd_expense",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did NVIDIA spend on research and development in fiscal year 2026?",
+  "value": 18497000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:operating_cash_flow",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was NVIDIA's net cash provided by operating activities in fiscal year 2026?",
+  "value": 102718000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:operating_income",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was NVIDIA's operating income for fiscal year 2026?",
+  "value": 130387000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:equity",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "equity",
+  "tag": "StockholdersEquity",
+  "question": "What was NVIDIA's total stockholders' equity at the end of fiscal year 2026?",
+  "value": 157293000000.0,
+  "accession": "0001045810-26-000021"
+ }
+]

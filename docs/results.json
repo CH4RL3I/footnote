@@ -1,0 +1,2235 @@
+{
+ "n_questions": 64,
+ "retrieval": [
+  {
+   "chunking": "fixed",
+   "retriever": "bm25",
+   "n": 64,
+   "recall": {
+    "1": 0.171875,
+    "5": 0.28125,
+    "10": 0.328125,
+    "20": 0.40625
+   },
+   "recall_ci": {
+    "1": [
+     0.0987764126731623,
+     0.2821344149016591
+    ],
+    "5": [
+     0.18593226105484584,
+     0.40134162399503504
+    ],
+    "10": [
+     0.2257039576708776,
+     0.45001123772545737
+    ],
+    "20": [
+     0.29456724435258885,
+     0.528550134954503
+    ]
+   },
+   "mrr": 0.22926896035417244,
+   "ranks": {
+    "AAPL-FY2024:revenue": 16,
+    "AAPL-FY2024:net_income": 22,
+    "AAPL-FY2024:total_assets": null,
+    "AAPL-FY2024:rd_expense": 26,
+    "AAPL-FY2024:operating_cash_flow": 34,
+    "AAPL-FY2024:operating_income": 61,
+    "AAPL-FY2024:equity": null,
+    "AAPL-FY2025:revenue": 21,
+    "AAPL-FY2025:net_income": 62,
+    "AAPL-FY2025:total_assets": null,
+    "AAPL-FY2025:rd_expense": 22,
+    "AAPL-FY2025:operating_cash_flow": 42,
+    "AAPL-FY2025:operating_income": 70,
+    "AAPL-FY2025:equity": null,
+    "JPM-FY2024:revenue": 53,
+    "JPM-FY2024:net_income": 52,
+    "JPM-FY2024:total_assets": null,
+    "JPM-FY2024:operating_cash_flow": 9,
+    "JPM-FY2024:equity": 19,
+    "JPM-FY2025:revenue": 52,
+    "JPM-FY2025:net_income": 85,
+    "JPM-FY2025:total_assets": null,
+    "JPM-FY2025:operating_cash_flow": 10,
+    "JPM-FY2025:equity": 44,
+    "KO-FY2024:revenue": 67,
+    "KO-FY2024:net_income": 31,
+    "KO-FY2024:total_assets": null,
+    "KO-FY2024:operating_cash_flow": 2,
+    "KO-FY2024:operating_income": 93,
+    "KO-FY2024:equity": 14,
+    "KO-FY2025:revenue": null,
+    "KO-FY2025:net_income": 31,
+    "KO-FY2025:total_assets": null,
+    "KO-FY2025:operating_cash_flow": 4,
+    "KO-FY2025:operating_income": 81,
+    "KO-FY2025:equity": 21,
+    "MSFT-FY2025:revenue": 1,
+    "MSFT-FY2025:net_income": 33,
+    "MSFT-FY2025:total_assets": null,
+    "MSFT-FY2025:rd_expense": 1,
+    "MSFT-FY2025:operating_cash_flow": 31,
+    "MSFT-FY2025:operating_income": 4,
+    "MSFT-FY2025:equity": 11,
+    "MSFT-FY2026:revenue": 3,
+    "MSFT-FY2026:net_income": 29,
+    "MSFT-FY2026:total_assets": null,
+    "MSFT-FY2026:rd_expense": 1,
+    "MSFT-FY2026:operating_cash_flow": 8,
+    "MSFT-FY2026:operating_income": 5,
+    "MSFT-FY2026:equity": 13,
+    "NVDA-FY2025:revenue": 2,
+    "NVDA-FY2025:net_income": 1,
+    "NVDA-FY2025:total_assets": null,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2025:operating_cash_flow": 1,
+    "NVDA-FY2025:operating_income": 1,
+    "NVDA-FY2025:equity": null,
+    "NVDA-FY2026:revenue": 1,
+    "NVDA-FY2026:net_income": 1,
+    "NVDA-FY2026:total_assets": null,
+    "NVDA-FY2026:rd_expense": 1,
+    "NVDA-FY2026:operating_cash_flow": 3,
+    "NVDA-FY2026:operating_income": 1,
+    "NVDA-FY2026:equity": null
+   }
+  },
+  {
+   "chunking": "fixed",
+   "retriever": "dense",
+   "n": 64,
+   "recall": {
+    "1": 0.234375,
+    "5": 0.640625,
+    "10": 0.8125,
+    "20": 0.859375
+   },
+   "recall_ci": {
+    "1": [
+     0.1474976721963502,
+     0.35133490250707655
+    ],
+    "5": [
+     0.5182062363615084,
+     0.7471176946778538
+    ],
+    "10": [
+     0.7002540844522482,
+     0.889354651190779
+    ],
+    "20": [
+     0.7538349160536257,
+     0.9242151299358556
+    ]
+   },
+   "mrr": 0.40559010085555736,
+   "ranks": {
+    "AAPL-FY2024:revenue": 3,
+    "AAPL-FY2024:net_income": 3,
+    "AAPL-FY2024:total_assets": 6,
+    "AAPL-FY2024:rd_expense": 4,
+    "AAPL-FY2024:operating_cash_flow": 6,
+    "AAPL-FY2024:operating_income": 4,
+    "AAPL-FY2024:equity": 1,
+    "AAPL-FY2025:revenue": 2,
+    "AAPL-FY2025:net_income": 12,
+    "AAPL-FY2025:total_assets": 24,
+    "AAPL-FY2025:rd_expense": 2,
+    "AAPL-FY2025:operating_cash_flow": 3,
+    "AAPL-FY2025:operating_income": 8,
+    "AAPL-FY2025:equity": 1,
+    "JPM-FY2024:revenue": 2,
+    "JPM-FY2024:net_income": 7,
+    "JPM-FY2024:total_assets": 5,
+    "JPM-FY2024:operating_cash_flow": 1,
+    "JPM-FY2024:equity": 2,
+    "JPM-FY2025:revenue": 5,
+    "JPM-FY2025:net_income": 6,
+    "JPM-FY2025:total_assets": 2,
+    "JPM-FY2025:operating_cash_flow": 1,
+    "JPM-FY2025:equity": 2,
+    "KO-FY2024:revenue": 12,
+    "KO-FY2024:net_income": 14,
+    "KO-FY2024:total_assets": 48,
+    "KO-FY2024:operating_cash_flow": 1,
+    "KO-FY2024:operating_income": 6,
+    "KO-FY2024:equity": 44,
+    "KO-FY2025:revenue": 5,
+    "KO-FY2025:net_income": 29,
+    "KO-FY2025:total_assets": 48,
+    "KO-FY2025:operating_cash_flow": 2,
+    "KO-FY2025:operating_income": 4,
+    "KO-FY2025:equity": 31,
+    "MSFT-FY2025:revenue": 1,
+    "MSFT-FY2025:net_income": 3,
+    "MSFT-FY2025:total_assets": 7,
+    "MSFT-FY2025:rd_expense": 4,
+    "MSFT-FY2025:operating_cash_flow": 1,
+    "MSFT-FY2025:operating_income": 1,
+    "MSFT-FY2025:equity": 6,
+    "MSFT-FY2026:revenue": 1,
+    "MSFT-FY2026:net_income": 4,
+    "MSFT-FY2026:total_assets": 9,
+    "MSFT-FY2026:rd_expense": 1,
+    "MSFT-FY2026:operating_cash_flow": 5,
+    "MSFT-FY2026:operating_income": 1,
+    "MSFT-FY2026:equity": 4,
+    "NVDA-FY2025:revenue": 1,
+    "NVDA-FY2025:net_income": 1,
+    "NVDA-FY2025:total_assets": 59,
+    "NVDA-FY2025:rd_expense": 2,
+    "NVDA-FY2025:operating_cash_flow": 5,
+    "NVDA-FY2025:operating_income": 1,
+    "NVDA-FY2025:equity": 2,
+    "NVDA-FY2026:revenue": 1,
+    "NVDA-FY2026:net_income": 7,
+    "NVDA-FY2026:total_assets": 28,
+    "NVDA-FY2026:rd_expense": 4,
+    "NVDA-FY2026:operating_cash_flow": 50,
+    "NVDA-FY2026:operating_income": 4,
+    "NVDA-FY2026:equity": 7
+   }
+  },
+  {
+   "chunking": "fixed",
+   "retriever": "hybrid",
+   "n": 64,
+   "recall": {
+    "1": 0.328125,
+    "5": 0.546875,
+    "10": 0.703125,
+    "20": 0.84375
+   },
+   "recall_ci": {
+    "1": [
+     0.2257039576708776,
+     0.45001123772545737
+    ],
+    "5": [
+     0.42573382520679776,
+     0.6627074851396563
+    ],
+    "10": [
+     0.5822956740587202,
+     0.8009500041092477
+    ],
+    "20": [
+     0.7357170979769467,
+     0.9128525112303834
+    ]
+   },
+   "mrr": 0.4494277040680283,
+   "ranks": {
+    "AAPL-FY2024:revenue": 2,
+    "AAPL-FY2024:net_income": 1,
+    "AAPL-FY2024:total_assets": 20,
+    "AAPL-FY2024:rd_expense": 3,
+    "AAPL-FY2024:operating_cash_flow": 1,
+    "AAPL-FY2024:operating_income": 6,
+    "AAPL-FY2024:equity": 9,
+    "AAPL-FY2025:revenue": 3,
+    "AAPL-FY2025:net_income": 9,
+    "AAPL-FY2025:total_assets": 49,
+    "AAPL-FY2025:rd_expense": 2,
+    "AAPL-FY2025:operating_cash_flow": 2,
+    "AAPL-FY2025:operating_income": 7,
+    "AAPL-FY2025:equity": 12,
+    "JPM-FY2024:revenue": 1,
+    "JPM-FY2024:net_income": 3,
+    "JPM-FY2024:total_assets": 12,
+    "JPM-FY2024:operating_cash_flow": 1,
+    "JPM-FY2024:equity": 3,
+    "JPM-FY2025:revenue": 10,
+    "JPM-FY2025:net_income": 15,
+    "JPM-FY2025:total_assets": 7,
+    "JPM-FY2025:operating_cash_flow": 1,
+    "JPM-FY2025:equity": 1,
+    "KO-FY2024:revenue": 17,
+    "KO-FY2024:net_income": 4,
+    "KO-FY2024:total_assets": 91,
+    "KO-FY2024:operating_cash_flow": 1,
+    "KO-FY2024:operating_income": 13,
+    "KO-FY2024:equity": 8,
+    "KO-FY2025:revenue": 12,
+    "KO-FY2025:net_income": 6,
+    "KO-FY2025:total_assets": 93,
+    "KO-FY2025:operating_cash_flow": 1,
+    "KO-FY2025:operating_income": 6,
+    "KO-FY2025:equity": 6,
+    "MSFT-FY2025:revenue": 1,
+    "MSFT-FY2025:net_income": 20,
+    "MSFT-FY2025:total_assets": 40,
+    "MSFT-FY2025:rd_expense": 2,
+    "MSFT-FY2025:operating_cash_flow": 1,
+    "MSFT-FY2025:operating_income": 1,
+    "MSFT-FY2025:equity": 4,
+    "MSFT-FY2026:revenue": 1,
+    "MSFT-FY2026:net_income": 12,
+    "MSFT-FY2026:total_assets": 43,
+    "MSFT-FY2026:rd_expense": 1,
+    "MSFT-FY2026:operating_cash_flow": 1,
+    "MSFT-FY2026:operating_income": 1,
+    "MSFT-FY2026:equity": 5,
+    "NVDA-FY2025:revenue": 1,
+    "NVDA-FY2025:net_income": 1,
+    "NVDA-FY2025:total_assets": 98,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2025:operating_cash_flow": 2,
+    "NVDA-FY2025:operating_income": 1,
+    "NVDA-FY2025:equity": 36,
+    "NVDA-FY2026:revenue": 1,
+    "NVDA-FY2026:net_income": 2,
+    "NVDA-FY2026:total_assets": 66,
+    "NVDA-FY2026:rd_expense": 1,
+    "NVDA-FY2026:operating_cash_flow": 34,
+    "NVDA-FY2026:operating_income": 2,
+    "NVDA-FY2026:equity": 46
+   }
+  },
+  {
+   "chunking": "section",
+   "retriever": "bm25",
+   "n": 64,
+   "recall": {
+    "1": 0.0625,
+    "5": 0.1875,
+    "10": 0.328125,
+    "20": 0.453125
+   },
+   "recall_ci": {
+    "1": [
+     0.024570803674792932,
+     0.14997696642496888
+    ],
+    "5": [
+     0.11064534880922097,
+     0.29974591554775176
+    ],
+    "10": [
+     0.2257039576708776,
+     0.45001123772545737
+    ],
+    "20": [
+     0.3372925148603437,
+     0.5742661747932022
+    ]
+   },
+   "mrr": 0.14099306729582056,
+   "ranks": {
+    "AAPL-FY2024:revenue": 9,
+    "AAPL-FY2024:net_income": 66,
+    "AAPL-FY2024:total_assets": null,
+    "AAPL-FY2024:rd_expense": 17,
+    "AAPL-FY2024:operating_cash_flow": 84,
+    "AAPL-FY2024:operating_income": 48,
+    "AAPL-FY2024:equity": null,
+    "AAPL-FY2025:revenue": 18,
+    "AAPL-FY2025:net_income": 67,
+    "AAPL-FY2025:total_assets": null,
+    "AAPL-FY2025:rd_expense": 8,
+    "AAPL-FY2025:operating_cash_flow": null,
+    "AAPL-FY2025:operating_income": 46,
+    "AAPL-FY2025:equity": null,
+    "JPM-FY2024:revenue": 59,
+    "JPM-FY2024:net_income": 59,
+    "JPM-FY2024:total_assets": null,
+    "JPM-FY2024:operating_cash_flow": 5,
+    "JPM-FY2024:equity": 16,
+    "JPM-FY2025:revenue": 36,
+    "JPM-FY2025:net_income": 34,
+    "JPM-FY2025:total_assets": null,
+    "JPM-FY2025:operating_cash_flow": 6,
+    "JPM-FY2025:equity": 24,
+    "KO-FY2024:revenue": 47,
+    "KO-FY2024:net_income": 28,
+    "KO-FY2024:total_assets": null,
+    "KO-FY2024:operating_cash_flow": 5,
+    "KO-FY2024:operating_income": 79,
+    "KO-FY2024:equity": 6,
+    "KO-FY2025:revenue": 48,
+    "KO-FY2025:net_income": 43,
+    "KO-FY2025:total_assets": null,
+    "KO-FY2025:operating_cash_flow": 4,
+    "KO-FY2025:operating_income": 87,
+    "KO-FY2025:equity": 40,
+    "MSFT-FY2025:revenue": 6,
+    "MSFT-FY2025:net_income": 20,
+    "MSFT-FY2025:total_assets": null,
+    "MSFT-FY2025:rd_expense": 2,
+    "MSFT-FY2025:operating_cash_flow": 11,
+    "MSFT-FY2025:operating_income": 2,
+    "MSFT-FY2025:equity": 61,
+    "MSFT-FY2026:revenue": 3,
+    "MSFT-FY2026:net_income": 24,
+    "MSFT-FY2026:total_assets": null,
+    "MSFT-FY2026:rd_expense": 20,
+    "MSFT-FY2026:operating_cash_flow": 6,
+    "MSFT-FY2026:operating_income": 3,
+    "MSFT-FY2026:equity": 73,
+    "NVDA-FY2025:revenue": 1,
+    "NVDA-FY2025:net_income": 18,
+    "NVDA-FY2025:total_assets": null,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2025:operating_cash_flow": 2,
+    "NVDA-FY2025:operating_income": 16,
+    "NVDA-FY2025:equity": null,
+    "NVDA-FY2026:revenue": 7,
+    "NVDA-FY2026:net_income": 8,
+    "NVDA-FY2026:total_assets": null,
+    "NVDA-FY2026:rd_expense": 1,
+    "NVDA-FY2026:operating_cash_flow": 1,
+    "NVDA-FY2026:operating_income": 9,
+    "NVDA-FY2026:equity": null
+   }
+  },
+  {
+   "chunking": "section",
+   "retriever": "dense",
+   "n": 64,
+   "recall": {
+    "1": 0.328125,
+    "5": 0.5,
+    "10": 0.6875,
+    "20": 0.84375
+   },
+   "recall_ci": {
+    "1": [
+     0.2257039576708776,
+     0.45001123772545737
+    ],
+    "5": [
+     0.38101888493214947,
+     0.6189811150678505
+    ],
+    "10": [
+     0.5660743364084737,
+     0.7876909049773426
+    ],
+    "20": [
+     0.7357170979769467,
+     0.9128525112303834
+    ]
+   },
+   "mrr": 0.42598581703153965,
+   "ranks": {
+    "AAPL-FY2024:revenue": 1,
+    "AAPL-FY2024:net_income": 13,
+    "AAPL-FY2024:total_assets": 62,
+    "AAPL-FY2024:rd_expense": 1,
+    "AAPL-FY2024:operating_cash_flow": 51,
+    "AAPL-FY2024:operating_income": 1,
+    "AAPL-FY2024:equity": 2,
+    "AAPL-FY2025:revenue": 1,
+    "AAPL-FY2025:net_income": 9,
+    "AAPL-FY2025:total_assets": 60,
+    "AAPL-FY2025:rd_expense": 5,
+    "AAPL-FY2025:operating_cash_flow": 34,
+    "AAPL-FY2025:operating_income": 16,
+    "AAPL-FY2025:equity": 11,
+    "JPM-FY2024:revenue": 1,
+    "JPM-FY2024:net_income": 1,
+    "JPM-FY2024:total_assets": 15,
+    "JPM-FY2024:operating_cash_flow": 1,
+    "JPM-FY2024:equity": 2,
+    "JPM-FY2025:revenue": 1,
+    "JPM-FY2025:net_income": 1,
+    "JPM-FY2025:total_assets": 10,
+    "JPM-FY2025:operating_cash_flow": 9,
+    "JPM-FY2025:equity": 2,
+    "KO-FY2024:revenue": 11,
+    "KO-FY2024:net_income": 19,
+    "KO-FY2024:total_assets": 33,
+    "KO-FY2024:operating_cash_flow": 1,
+    "KO-FY2024:operating_income": 3,
+    "KO-FY2024:equity": 8,
+    "KO-FY2025:revenue": 5,
+    "KO-FY2025:net_income": 38,
+    "KO-FY2025:total_assets": 33,
+    "KO-FY2025:operating_cash_flow": 1,
+    "KO-FY2025:operating_income": 9,
+    "KO-FY2025:equity": 45,
+    "MSFT-FY2025:revenue": 2,
+    "MSFT-FY2025:net_income": 1,
+    "MSFT-FY2025:total_assets": 13,
+    "MSFT-FY2025:rd_expense": 1,
+    "MSFT-FY2025:operating_cash_flow": 1,
+    "MSFT-FY2025:operating_income": 1,
+    "MSFT-FY2025:equity": 12,
+    "MSFT-FY2026:revenue": 1,
+    "MSFT-FY2026:net_income": 1,
+    "MSFT-FY2026:total_assets": 3,
+    "MSFT-FY2026:rd_expense": 21,
+    "MSFT-FY2026:operating_cash_flow": 1,
+    "MSFT-FY2026:operating_income": 1,
+    "MSFT-FY2026:equity": 10,
+    "NVDA-FY2025:revenue": 1,
+    "NVDA-FY2025:net_income": 10,
+    "NVDA-FY2025:total_assets": 26,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2025:operating_cash_flow": 15,
+    "NVDA-FY2025:operating_income": 10,
+    "NVDA-FY2025:equity": 10,
+    "NVDA-FY2026:revenue": 3,
+    "NVDA-FY2026:net_income": 6,
+    "NVDA-FY2026:total_assets": 13,
+    "NVDA-FY2026:rd_expense": 6,
+    "NVDA-FY2026:operating_cash_flow": 5,
+    "NVDA-FY2026:operating_income": 4,
+    "NVDA-FY2026:equity": 10
+   }
+  },
+  {
+   "chunking": "section",
+   "retriever": "hybrid",
+   "n": 64,
+   "recall": {
+    "1": 0.296875,
+    "5": 0.53125,
+    "10": 0.59375,
+    "20": 0.71875
+   },
+   "recall_ci": {
+    "1": [
+     0.19904999589075245,
+     0.4177043259412798
+    ],
+    "5": [
+     0.41071875000475133,
+     0.6482421235595515
+    ],
+    "10": [
+     0.471449865045497,
+     0.7054327556474111
+    ],
+    "20": [
+     0.598658376004965,
+     0.8140677389451542
+    ]
+   },
+   "mrr": 0.40293812484118147,
+   "ranks": {
+    "AAPL-FY2024:revenue": 1,
+    "AAPL-FY2024:net_income": 14,
+    "AAPL-FY2024:total_assets": null,
+    "AAPL-FY2024:rd_expense": 1,
+    "AAPL-FY2024:operating_cash_flow": 15,
+    "AAPL-FY2024:operating_income": 4,
+    "AAPL-FY2024:equity": 13,
+    "AAPL-FY2025:revenue": 1,
+    "AAPL-FY2025:net_income": 9,
+    "AAPL-FY2025:total_assets": null,
+    "AAPL-FY2025:rd_expense": 9,
+    "AAPL-FY2025:operating_cash_flow": 71,
+    "AAPL-FY2025:operating_income": 4,
+    "AAPL-FY2025:equity": 29,
+    "JPM-FY2024:revenue": 2,
+    "JPM-FY2024:net_income": 3,
+    "JPM-FY2024:total_assets": 30,
+    "JPM-FY2024:operating_cash_flow": 2,
+    "JPM-FY2024:equity": 1,
+    "JPM-FY2025:revenue": 1,
+    "JPM-FY2025:net_income": 1,
+    "JPM-FY2025:total_assets": 23,
+    "JPM-FY2025:operating_cash_flow": 4,
+    "JPM-FY2025:equity": 2,
+    "KO-FY2024:revenue": 2,
+    "KO-FY2024:net_income": 5,
+    "KO-FY2024:total_assets": 68,
+    "KO-FY2024:operating_cash_flow": 1,
+    "KO-FY2024:operating_income": 17,
+    "KO-FY2024:equity": 1,
+    "KO-FY2025:revenue": 2,
+    "KO-FY2025:net_income": 5,
+    "KO-FY2025:total_assets": 70,
+    "KO-FY2025:operating_cash_flow": 1,
+    "KO-FY2025:operating_income": 26,
+    "KO-FY2025:equity": 11,
+    "MSFT-FY2025:revenue": 1,
+    "MSFT-FY2025:net_income": 4,
+    "MSFT-FY2025:total_assets": 48,
+    "MSFT-FY2025:rd_expense": 1,
+    "MSFT-FY2025:operating_cash_flow": 1,
+    "MSFT-FY2025:operating_income": 1,
+    "MSFT-FY2025:equity": 18,
+    "MSFT-FY2026:revenue": 1,
+    "MSFT-FY2026:net_income": 7,
+    "MSFT-FY2026:total_assets": 36,
+    "MSFT-FY2026:rd_expense": 9,
+    "MSFT-FY2026:operating_cash_flow": 1,
+    "MSFT-FY2026:operating_income": 1,
+    "MSFT-FY2026:equity": 15,
+    "NVDA-FY2025:revenue": 1,
+    "NVDA-FY2025:net_income": 22,
+    "NVDA-FY2025:total_assets": 57,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2025:operating_cash_flow": 4,
+    "NVDA-FY2025:operating_income": 27,
+    "NVDA-FY2025:equity": 45,
+    "NVDA-FY2026:revenue": 3,
+    "NVDA-FY2026:net_income": 18,
+    "NVDA-FY2026:total_assets": 47,
+    "NVDA-FY2026:rd_expense": 1,
+    "NVDA-FY2026:operating_cash_flow": 2,
+    "NVDA-FY2026:operating_income": 22,
+    "NVDA-FY2026:equity": 45
+   }
+  }
+ ],
+ "e2e": [
+  {
+   "label": "fixed + dense",
+   "generator": "ollama:llama3.2",
+   "n": 64,
+   "accuracy": 0.5625,
+   "accuracy_ci": [
+    0.4408599177828787,
+    0.6770618293457267
+   ],
+   "citation": 0.4375,
+   "cited_gold": 0.484375,
+   "abstained": 0.078125,
+   "seconds_per_question": 6.850493181496859
+  },
+  {
+   "label": "oracle (fixed)",
+   "generator": "ollama:llama3.2",
+   "n": 64,
+   "accuracy": 0.921875,
+   "accuracy_ci": [
+    0.8298024712135222,
+    0.9661693219045645
+   ],
+   "citation": 0.8125,
+   "cited_gold": 0.875,
+   "abstained": 0.0,
+   "seconds_per_question": 6.184856280684471
+  }
+ ],
+ "e2e_details": {
+  "fixed + dense": [
+   {
+    "id": "AAPL-FY2024:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2024?",
+    "expected_usd": 391035000000.0,
+    "answer": "$391,035 million. [AAPL-FY2024#0115]",
+    "cited": [
+     "AAPL-FY2024#0115"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:net_income",
+    "question": "What was Apple's net income for fiscal year 2024?",
+    "expected_usd": 93736000000.0,
+    "answer": "$93,736 million. [AAPL-FY2024#0116]",
+    "cited": [
+     "AAPL-FY2024#0116"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:total_assets",
+    "question": "What were Apple's total assets at the end of fiscal year 2024?",
+    "expected_usd": 364980000000.0,
+    "answer": "$352,583 million. [AAPL-FY2024#0128]",
+    "cited": [
+     "AAPL-FY2024#0128"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2024:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2024?",
+    "expected_usd": 31370000000.0,
+    "answer": "$31,370 million. [AAPL-FY2024#0130]",
+    "cited": [
+     "AAPL-FY2024#0130"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2024:operating_cash_flow",
+    "question": "What was Apple's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": 118254000000.0,
+    "answer": "$111,482 million [AAPL-FY2024#0110]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2024:operating_income",
+    "question": "What was Apple's operating income for fiscal year 2024?",
+    "expected_usd": 123216000000.0,
+    "answer": "$67,656 million. [AAPL-FY2024#0147]",
+    "cited": [
+     "AAPL-FY2024#0147"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2024:equity",
+    "question": "What was Apple's total stockholders' equity at the end of fiscal year 2024?",
+    "expected_usd": 56950000000.0,
+    "answer": "$56,950 million [AAPL-FY2024#0108]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2025:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2025?",
+    "expected_usd": 416161000000.0,
+    "answer": "$416,161 million [AAPL-FY2025#0088]",
+    "cited": [
+     "AAPL-FY2025#0088"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:net_income",
+    "question": "What was Apple's net income for fiscal year 2025?",
+    "expected_usd": 112010000000.0,
+    "answer": "not found in the filings",
+    "cited": [],
+    "correct": false,
+    "abstained": true,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2025:total_assets",
+    "question": "What were Apple's total assets at the end of fiscal year 2025?",
+    "expected_usd": 359241000000.0,
+    "answer": "not found in the filings",
+    "cited": [],
+    "correct": false,
+    "abstained": true,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2025:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2025?",
+    "expected_usd": 34550000000.0,
+    "answer": "$34,550 million. [AAPL-FY2025#0092]",
+    "cited": [
+     "AAPL-FY2025#0092"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:operating_cash_flow",
+    "question": "What was Apple's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 111482000000.0,
+    "answer": "$111,482 million. [AAPL-FY2025#0110]",
+    "cited": [
+     "AAPL-FY2025#0110"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:operating_income",
+    "question": "What was Apple's operating income for fiscal year 2025?",
+    "expected_usd": 133050000000.0,
+    "answer": "$60,508 million. [AAPL-FY2025#0152]",
+    "cited": [
+     "AAPL-FY2025#0152"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2025:equity",
+    "question": "What was Apple's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 73733000000.0,
+    "answer": "$73,733 million. [AAPL-FY2025#0108]",
+    "cited": [
+     "AAPL-FY2025#0108"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2024:revenue",
+    "question": "What was JPMorgan Chase's total revenue for fiscal year 2024?",
+    "expected_usd": 177556000000.0,
+    "answer": "$70,114 million [JPM-FY2024#0123]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2024:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2024?",
+    "expected_usd": 58471000000.0,
+    "answer": "$24,846 [JPM-FY2024#0123]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2024:total_assets",
+    "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+    "expected_usd": 4002814000000.0,
+    "answer": "$4,002,814 million. [JPM-FY2024#177556]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2024:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": -42012000000.0,
+    "answer": "$42,012 million [JPM-FY2024#0219]",
+    "cited": [
+     "JPM-FY2024#0219"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2024:equity",
+    "question": "What was JPMorgan Chase's total stockholders' equity at the end of fiscal year 2024?",
+    "expected_usd": 344758000000.0,
+    "answer": "$344,758 million. [JPM-FY2024#0552]",
+    "cited": [
+     "JPM-FY2024#0552"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:revenue",
+    "question": "What was JPMorgan Chase's total revenue for fiscal year 2025?",
+    "expected_usd": 182447000000.0,
+    "answer": "$78.454 billion [JPM-FY2025#0245]",
+    "cited": [
+     "JPM-FY2025#0245"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2025:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2025?",
+    "expected_usd": 57048000000.0,
+    "answer": "$10,601 million. [JPM-FY2025#0996]",
+    "cited": [
+     "JPM-FY2025#0996"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2025:total_assets",
+    "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2025?",
+    "expected_usd": 4424900000000.0,
+    "answer": "$4,424,900 million [JPM-FY2025#0983]",
+    "cited": [
+     "JPM-FY2025#0983"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": -147782000000.0,
+    "answer": "$147,782 million. [JPM-FY2025#0198]",
+    "cited": [
+     "JPM-FY2025#0198"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:equity",
+    "question": "What was JPMorgan Chase's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 362438000000.0,
+    "answer": "$362,438 [JPM-FY2025#0527]",
+    "cited": [
+     "JPM-FY2025#0527"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2024:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2024?",
+    "expected_usd": 47061000000.0,
+    "answer": "$43,004 million [KO-FY2024#0460]",
+    "cited": [
+     "KO-FY2024#0460"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:net_income",
+    "question": "What was Coca-Cola's net income for fiscal year 2024?",
+    "expected_usd": 10631000000.0,
+    "answer": "Not found in the filings",
+    "cited": [],
+    "correct": false,
+    "abstained": true,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:total_assets",
+    "question": "What were Coca-Cola's total assets at the end of fiscal year 2024?",
+    "expected_usd": 100549000000.0,
+    "answer": "not found in the filings",
+    "cited": [],
+    "correct": false,
+    "abstained": true,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:operating_cash_flow",
+    "question": "What was Coca-Cola's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": 6805000000.0,
+    "answer": "$6,805 million [KO-FY2024#0238]",
+    "cited": [
+     "KO-FY2024#0238"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2024:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2024?",
+    "expected_usd": 9992000000.0,
+    "answer": "$4,336 million [KO-FY2024#0220]",
+    "cited": [
+     "KO-FY2024#0220"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:equity",
+    "question": "What was Coca-Cola's total stockholders' equity at the end of fiscal year 2024?",
+    "expected_usd": 24856000000.0,
+    "answer": "$18,358 million [KO-FY2024#0349]",
+    "cited": [
+     "KO-FY2024#0349"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2025:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2025?",
+    "expected_usd": 47941000000.0,
+    "answer": "$47,941 million [KO-FY2025#0208]",
+    "cited": [
+     "KO-FY2025#0208"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:net_income",
+    "question": "What was Coca-Cola's net income for fiscal year 2025?",
+    "expected_usd": 13107000000.0,
+    "answer": "$13,137 million [KO-FY2025#0350#13,137]",
+    "cited": [
+     "KO-FY2025#0350"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2025:total_assets",
+    "question": "What were Coca-Cola's total assets at the end of fiscal year 2025?",
+    "expected_usd": 104816000000.0,
+    "answer": "not found in the filings",
+    "cited": [],
+    "correct": false,
+    "abstained": true,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2025:operating_cash_flow",
+    "question": "What was Coca-Cola's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 7408000000.0,
+    "answer": "$7,408 million [KO-FY2025#0238]",
+    "cited": [
+     "KO-FY2025#0238"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2025?",
+    "expected_usd": 13762000000.0,
+    "answer": "$13,762 million. [KO-FY2025#0219]",
+    "cited": [
+     "KO-FY2025#0219"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:equity",
+    "question": "What was Coca-Cola's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 32169000000.0,
+    "answer": "$80,382 million [KO-FY2025#0273]",
+    "cited": [
+     "KO-FY2025#0273"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2025:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2025?",
+    "expected_usd": 281724000000.0,
+    "answer": "$281,724 million. [MSFT-FY2025#0240]",
+    "cited": [
+     "MSFT-FY2025#0240"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:net_income",
+    "question": "What was Microsoft's net income for fiscal year 2025?",
+    "expected_usd": 101832000000.0,
+    "answer": "$101,832 million. [MSFT-FY2025#0156]",
+    "cited": [
+     "MSFT-FY2025#0156"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:total_assets",
+    "question": "What were Microsoft's total assets at the end of fiscal year 2025?",
+    "expected_usd": 619003000000.0,
+    "answer": "$475,513 million. [MSFT-FY2025#0249]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2025:rd_expense",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2025?",
+    "expected_usd": 32488000000.0,
+    "answer": "$32,488 million. [MSFT-FY2025#0131]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2025:operating_cash_flow",
+    "question": "What was Microsoft's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 136162000000.0,
+    "answer": "$51.7 billion [MSFT-FY2025#0240]",
+    "cited": [
+     "MSFT-FY2025#0240"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2025:operating_income",
+    "question": "What was Microsoft's operating income for fiscal year 2025?",
+    "expected_usd": 128528000000.0,
+    "answer": "$14,166 million. [MSFT-FY2025#0125]",
+    "cited": [
+     "MSFT-FY2025#0125"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2025:equity",
+    "question": "What was Microsoft's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 343479000000.0,
+    "answer": "$343,479 million [MSFT-FY2025#0158]",
+    "cited": [
+     "MSFT-FY2025#0158"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2026?",
+    "expected_usd": 331839000000.0,
+    "answer": "$331,839 million. [MSFT-FY2026#0228]",
+    "cited": [
+     "MSFT-FY2026#0228"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2026:net_income",
+    "question": "What was Microsoft's net income for fiscal year 2026?",
+    "expected_usd": 133749000000.0,
+    "answer": "$133,749 million [MSFT-FY2026#0160]",
+    "cited": [
+     "MSFT-FY2026#0160"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:total_assets",
+    "question": "What were Microsoft's total assets at the end of fiscal year 2026?",
+    "expected_usd": 758376000000.0,
+    "answer": "$475,513 million. [MSFT-FY2026#0208]",
+    "cited": [
+     "MSFT-FY2026#0208"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2026:rd_expense",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+    "expected_usd": 35562000000.0,
+    "answer": "$35,562 million. [MSFT-FY2026#0123]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2026:operating_cash_flow",
+    "question": "What was Microsoft's net cash provided by operating activities in fiscal year 2026?",
+    "expected_usd": 182935000000.0,
+    "answer": "$46.8 billion [MSFT-FY2026#0141]",
+    "cited": [
+     "MSFT-FY2026#0141"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2026:operating_income",
+    "question": "What was Microsoft's operating income for fiscal year 2026?",
+    "expected_usd": 155237000000.0,
+    "answer": "$155,237 million. [MSFT-FY2026#0247]",
+    "cited": [
+     "MSFT-FY2026#0247"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:equity",
+    "question": "What was Microsoft's total stockholders' equity at the end of fiscal year 2026?",
+    "expected_usd": 442387000000.0,
+    "answer": "$442,387 million. [442,387]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "NVDA-FY2025:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2025?",
+    "expected_usd": 130497000000.0,
+    "answer": "$130.497 billion [NVDA-FY2025#0174]",
+    "cited": [
+     "NVDA-FY2025#0174"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:net_income",
+    "question": "What was NVIDIA's net income for fiscal year 2025?",
+    "expected_usd": 72880000000.0,
+    "answer": "$72,880 million. [NVDA-FY2025#0208]",
+    "cited": [
+     "NVDA-FY2025#0208"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:total_assets",
+    "question": "What were NVIDIA's total assets at the end of fiscal year 2025?",
+    "expected_usd": 111601000000.0,
+    "answer": "$83,111 million [NVDA-FY2025#0248]",
+    "cited": [
+     "NVDA-FY2025#0248"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "NVDA-FY2025:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2025?",
+    "expected_usd": 12914000000.0,
+    "answer": "$12,914 million [NVDA-FY2025#0179]",
+    "cited": [
+     "NVDA-FY2025#0179"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:operating_cash_flow",
+    "question": "What was NVIDIA's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 64089000000.0,
+    "answer": "$64,089 million. [NVDA-FY2025#0182]",
+    "cited": [
+     "NVDA-FY2025#0182"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:operating_income",
+    "question": "What was NVIDIA's operating income for fiscal year 2025?",
+    "expected_usd": 81453000000.0,
+    "answer": "$81,453 million. [NVDA-FY2025#0174]",
+    "cited": [
+     "NVDA-FY2025#0174"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:equity",
+    "question": "What was NVIDIA's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 79327000000.0,
+    "answer": "$79,327 million [NVDA-FY2025#0210]",
+    "cited": [
+     "NVDA-FY2025#0210"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2026?",
+    "expected_usd": 215938000000.0,
+    "answer": "$215.9 billion [NVDA-FY2026#0159]",
+    "cited": [
+     "NVDA-FY2026#0159"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:net_income",
+    "question": "What was NVIDIA's net income for fiscal year 2026?",
+    "expected_usd": 120067000000.0,
+    "answer": "$141,450 million [NVDA-FY2026#0278]",
+    "cited": [
+     "NVDA-FY2026#0278"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "NVDA-FY2026:total_assets",
+    "question": "What were NVIDIA's total assets at the end of fiscal year 2026?",
+    "expected_usd": 206803000000.0,
+    "answer": "$215.9 billion [NVDA-FY2026#0159]",
+    "cited": [
+     "NVDA-FY2026#0159"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "NVDA-FY2026:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2026?",
+    "expected_usd": 18497000000.0,
+    "answer": "$18,497 million [NVDA-FY2026#0172]",
+    "cited": [
+     "NVDA-FY2026#0172"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:operating_cash_flow",
+    "question": "What was NVIDIA's net cash provided by operating activities in fiscal year 2026?",
+    "expected_usd": 102718000000.0,
+    "answer": "$1,034 million [NVDA-FY2026#0172]",
+    "cited": [
+     "NVDA-FY2026#0172"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "NVDA-FY2026:operating_income",
+    "question": "What was NVIDIA's operating income for fiscal year 2026?",
+    "expected_usd": 130387000000.0,
+    "answer": "$130,387 million. [NVDA-FY2026#0158]",
+    "cited": [
+     "NVDA-FY2026#0158"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:equity",
+    "question": "What was NVIDIA's total stockholders' equity at the end of fiscal year 2026?",
+    "expected_usd": 157293000000.0,
+    "answer": "$24.3 billion [0004]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   }
+  ],
+  "oracle (fixed)": [
+   {
+    "id": "AAPL-FY2024:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2024?",
+    "expected_usd": 391035000000.0,
+    "answer": "$391,035 million. [AAPL-FY2024#0102]",
+    "cited": [
+     "AAPL-FY2024#0102"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:net_income",
+    "question": "What was Apple's net income for fiscal year 2024?",
+    "expected_usd": 93736000000.0,
+    "answer": "$93,736 million. [AAPL-FY2024#0116]",
+    "cited": [
+     "AAPL-FY2024#0116"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:total_assets",
+    "question": "What were Apple's total assets at the end of fiscal year 2024?",
+    "expected_usd": 364980000000.0,
+    "answer": "$364,980 million. [AAPL-FY2024#0200]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2024:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2024?",
+    "expected_usd": 31370000000.0,
+    "answer": "$31,370 million [AAPL-FY2024#0090]",
+    "cited": [
+     "AAPL-FY2024#0090"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:operating_cash_flow",
+    "question": "What was Apple's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": 118254000000.0,
+    "answer": "$118,254 million [AAPL-FY2024#0108]",
+    "cited": [
+     "AAPL-FY2024#0108"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:operating_income",
+    "question": "What was Apple's operating income for fiscal year 2024?",
+    "expected_usd": 123216000000.0,
+    "answer": "$123,216 million [AAPL-FY2024#0147]",
+    "cited": [
+     "AAPL-FY2024#0147"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2024:equity",
+    "question": "What was Apple's total stockholders' equity at the end of fiscal year 2024?",
+    "expected_usd": 56950000000.0,
+    "answer": "$56,950 [AAPL-FY2024#0106]",
+    "cited": [
+     "AAPL-FY2024#0106"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2025?",
+    "expected_usd": 416161000000.0,
+    "answer": "$416,161 million. [AAPL-FY2025#0088]",
+    "cited": [
+     "AAPL-FY2025#0088"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:net_income",
+    "question": "What was Apple's net income for fiscal year 2025?",
+    "expected_usd": 112010000000.0,
+    "answer": "$112,010 million. [AAPL-FY2025#0110]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2025:total_assets",
+    "question": "What were Apple's total assets at the end of fiscal year 2025?",
+    "expected_usd": 359241000000.0,
+    "answer": "$364,980 million [AAPL-FY2025#0107]",
+    "cited": [
+     "AAPL-FY2025#0107"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "AAPL-FY2025:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2025?",
+    "expected_usd": 34550000000.0,
+    "answer": "$34,550 million [AAPL-FY2025#0092]",
+    "cited": [
+     "AAPL-FY2025#0092"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:operating_cash_flow",
+    "question": "What was Apple's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 111482000000.0,
+    "answer": "$111,482 million [AAPL-FY2025#0110]",
+    "cited": [
+     "AAPL-FY2025#0110"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:operating_income",
+    "question": "What was Apple's operating income for fiscal year 2025?",
+    "expected_usd": 133050000000.0,
+    "answer": "$133,050 million [AAPL-FY2025#0150]",
+    "cited": [
+     "AAPL-FY2025#0150"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "AAPL-FY2025:equity",
+    "question": "What was Apple's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 73733000000.0,
+    "answer": "$73,733 [AAPL-FY2025#0108]",
+    "cited": [
+     "AAPL-FY2025#0108"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2024:revenue",
+    "question": "What was JPMorgan Chase's total revenue for fiscal year 2024?",
+    "expected_usd": 177556000000.0,
+    "answer": "$177,556 million [JPM-FY2024#0175]",
+    "cited": [
+     "JPM-FY2024#0175"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2024:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2024?",
+    "expected_usd": 58471000000.0,
+    "answer": "$58,471 million [JPM-FY2024#0188]",
+    "cited": [
+     "JPM-FY2024#0188"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2024:total_assets",
+    "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2024?",
+    "expected_usd": 4002814000000.0,
+    "answer": "$4,002,814 million. [JPM-FY2024#0215]",
+    "cited": [
+     "JPM-FY2024#0215"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2024:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": -42012000000.0,
+    "answer": "$12,974 million [JPM-FY2024#0554]",
+    "cited": [
+     "JPM-FY2024#0554"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "JPM-FY2024:equity",
+    "question": "What was JPMorgan Chase's total stockholders' equity at the end of fiscal year 2024?",
+    "expected_usd": 344758000000.0,
+    "answer": "$344,758 million. [JPM-FY2024#0178]",
+    "cited": [
+     "JPM-FY2024#0178"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:revenue",
+    "question": "What was JPMorgan Chase's total revenue for fiscal year 2025?",
+    "expected_usd": 182447000000.0,
+    "answer": "$182,447 million. [JPM-FY2025#0170]",
+    "cited": [
+     "JPM-FY2025#0170"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2025?",
+    "expected_usd": 57048000000.0,
+    "answer": "$57,048 million. [JPM-FY2025#0523]",
+    "cited": [
+     "JPM-FY2025#0523"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:total_assets",
+    "question": "What were JPMorgan Chase's total assets at the end of fiscal year 2025?",
+    "expected_usd": 4424900000000.0,
+    "answer": "$4,424,900 million [JPM-FY2025#0525]",
+    "cited": [
+     "JPM-FY2025#0525"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": -147782000000.0,
+    "answer": "$ (147,782) million [JPM-FY2025#0198]",
+    "cited": [
+     "JPM-FY2025#0198"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "JPM-FY2025:equity",
+    "question": "What was JPMorgan Chase's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 362438000000.0,
+    "answer": "$362.438 billion [JPM-FY2025#0166]",
+    "cited": [
+     "JPM-FY2025#0166"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2024:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2024?",
+    "expected_usd": 47061000000.0,
+    "answer": "$47,061 million [KO-FY2024#0315]",
+    "cited": [
+     "KO-FY2024#0315"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2024:net_income",
+    "question": "What was Coca-Cola's net income for fiscal year 2024?",
+    "expected_usd": 10631000000.0,
+    "answer": "$10,631 million. [KO-FY2024#0123]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:total_assets",
+    "question": "What were Coca-Cola's total assets at the end of fiscal year 2024?",
+    "expected_usd": 100549000000.0,
+    "answer": "$100,549 million [KO-FY2024#0123]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:operating_cash_flow",
+    "question": "What was Coca-Cola's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": 6805000000.0,
+    "answer": "$6,805 million [KO-FY2024#0238]",
+    "cited": [
+     "KO-FY2024#0238"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2024:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2024?",
+    "expected_usd": 9992000000.0,
+    "answer": "$9,992 million. [KO-FY2024#0123]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2024:equity",
+    "question": "What was Coca-Cola's total stockholders' equity at the end of fiscal year 2024?",
+    "expected_usd": 24856000000.0,
+    "answer": "$26,372 [KO-FY2024#0274]",
+    "cited": [
+     "KO-FY2024#0274"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2025:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2025?",
+    "expected_usd": 47941000000.0,
+    "answer": "$47,941 million [KO-FY2025#0208]",
+    "cited": [
+     "KO-FY2025#0208"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:net_income",
+    "question": "What was Coca-Cola's net income for fiscal year 2025?",
+    "expected_usd": 13107000000.0,
+    "answer": "$13,137 million [KO-FY2025#0123]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "KO-FY2025:total_assets",
+    "question": "What were Coca-Cola's total assets at the end of fiscal year 2025?",
+    "expected_usd": 104816000000.0,
+    "answer": "$104,816 million [KO-FY2025#0268]",
+    "cited": [
+     "KO-FY2025#0268"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:operating_cash_flow",
+    "question": "What was Coca-Cola's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 7408000000.0,
+    "answer": "$7,408 million [KO-FY2025#0270]",
+    "cited": [
+     "KO-FY2025#0270"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2025?",
+    "expected_usd": 13762000000.0,
+    "answer": "$13,762 million. [KO-FY2025#0219]",
+    "cited": [
+     "KO-FY2025#0219"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "KO-FY2025:equity",
+    "question": "What was Coca-Cola's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 32169000000.0,
+    "answer": "$34,275 million [KO-FY2025#0269]",
+    "cited": [
+     "KO-FY2025#0269"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2025:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2025?",
+    "expected_usd": 281724000000.0,
+    "answer": "$281,724 million. [MSFT-FY2025#0122]",
+    "cited": [
+     "MSFT-FY2025#0122"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:net_income",
+    "question": "What was Microsoft's net income for fiscal year 2025?",
+    "expected_usd": 101832000000.0,
+    "answer": "$101,832 million [MSFT-FY2025#0156]",
+    "cited": [
+     "MSFT-FY2025#0156"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:total_assets",
+    "question": "What were Microsoft's total assets at the end of fiscal year 2025?",
+    "expected_usd": 619003000000.0,
+    "answer": "$619,003 million. [MSFT-FY2025#0157]",
+    "cited": [
+     "MSFT-FY2025#0157"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:rd_expense",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2025?",
+    "expected_usd": 32488000000.0,
+    "answer": "$32,488 million [MSFT-FY2025#0128]",
+    "cited": [
+     "MSFT-FY2025#0128"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:operating_cash_flow",
+    "question": "What was Microsoft's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 136162000000.0,
+    "answer": "$136.2 billion [MSFT-FY2025#0138]",
+    "cited": [
+     "MSFT-FY2025#0138"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:operating_income",
+    "question": "What was Microsoft's operating income for fiscal year 2025?",
+    "expected_usd": 128528000000.0,
+    "answer": "$128,528 million. [MSFT-FY2025#0123]",
+    "cited": [
+     "MSFT-FY2025#0123"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2025:equity",
+    "question": "What was Microsoft's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 343479000000.0,
+    "answer": "$343,479 [MSFT-FY2025#0161]",
+    "cited": [
+     "MSFT-FY2025#0161"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2026?",
+    "expected_usd": 331839000000.0,
+    "answer": "$331,839 million. [MSFT-FY2026#0123]",
+    "cited": [
+     "MSFT-FY2026#0123"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:net_income",
+    "question": "What was Microsoft's net income for fiscal year 2026?",
+    "expected_usd": 133749000000.0,
+    "answer": "$133,749 million [MSFT-FY2026#0159]",
+    "cited": [
+     "MSFT-FY2026#0159"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:total_assets",
+    "question": "What were Microsoft's total assets at the end of fiscal year 2026?",
+    "expected_usd": 758376000000.0,
+    "answer": "$758,376 million [MSFT-FY2026#0161]",
+    "cited": [
+     "MSFT-FY2026#0161"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:rd_expense",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+    "expected_usd": 35562000000.0,
+    "answer": "$35,562 million [MSFT-FY2026#0123]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "MSFT-FY2026:operating_cash_flow",
+    "question": "What was Microsoft's net cash provided by operating activities in fiscal year 2026?",
+    "expected_usd": 182935000000.0,
+    "answer": "$182.9 billion [MSFT-FY2026#0141]",
+    "cited": [
+     "MSFT-FY2026#0141"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:operating_income",
+    "question": "What was Microsoft's operating income for fiscal year 2026?",
+    "expected_usd": 155237000000.0,
+    "answer": "$155,237 million. [MSFT-FY2026#0247]",
+    "cited": [
+     "MSFT-FY2026#0247"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "MSFT-FY2026:equity",
+    "question": "What was Microsoft's total stockholders' equity at the end of fiscal year 2026?",
+    "expected_usd": 442387000000.0,
+    "answer": "$442,387 million [MSFT-FY2026#0165]",
+    "cited": [
+     "MSFT-FY2026#0165"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2025?",
+    "expected_usd": 130497000000.0,
+    "answer": "$130.497 billion",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false
+   },
+   {
+    "id": "NVDA-FY2025:net_income",
+    "question": "What was NVIDIA's net income for fiscal year 2025?",
+    "expected_usd": 72880000000.0,
+    "answer": "$72,880 million. [NVDA-FY2025#0207]",
+    "cited": [
+     "NVDA-FY2025#0207"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:total_assets",
+    "question": "What were NVIDIA's total assets at the end of fiscal year 2025?",
+    "expected_usd": 111601000000.0,
+    "answer": "$111,601 million [NVDA-FY2025#0209]",
+    "cited": [
+     "NVDA-FY2025#0209"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2025?",
+    "expected_usd": 12914000000.0,
+    "answer": "$12,914 million [NVDA-FY2025#0179]",
+    "cited": [
+     "NVDA-FY2025#0179"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:operating_cash_flow",
+    "question": "What was NVIDIA's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": 64089000000.0,
+    "answer": "$64,089 million [NVDA-FY2025#0214]",
+    "cited": [
+     "NVDA-FY2025#0214"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:operating_income",
+    "question": "What was NVIDIA's operating income for fiscal year 2025?",
+    "expected_usd": 81453000000.0,
+    "answer": "$81,453 million. [NVDA-FY2025#0175]",
+    "cited": [
+     "NVDA-FY2025#0175"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2025:equity",
+    "question": "What was NVIDIA's total stockholders' equity at the end of fiscal year 2025?",
+    "expected_usd": 79327000000.0,
+    "answer": "$79,327 million [NVDA-FY2025#0213]",
+    "cited": [
+     "NVDA-FY2025#0213"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2026?",
+    "expected_usd": 215938000000.0,
+    "answer": "$215.9 billion [NVDA-FY2026#0167]",
+    "cited": [
+     "NVDA-FY2026#0167"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:net_income",
+    "question": "What was NVIDIA's net income for fiscal year 2026?",
+    "expected_usd": 120067000000.0,
+    "answer": "$120,067 million. [NVDA-FY2026#0202]",
+    "cited": [
+     "NVDA-FY2026#0202"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:total_assets",
+    "question": "What were NVIDIA's total assets at the end of fiscal year 2026?",
+    "expected_usd": 206803000000.0,
+    "answer": "$206,803 million [NVDA-FY2026#0204]",
+    "cited": [
+     "NVDA-FY2026#0204"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2026?",
+    "expected_usd": 18497000000.0,
+    "answer": "$18,497 million [NVDA-FY2026#0172]",
+    "cited": [
+     "NVDA-FY2026#0172"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:operating_cash_flow",
+    "question": "What was NVIDIA's net cash provided by operating activities in fiscal year 2026?",
+    "expected_usd": 102718000000.0,
+    "answer": "$102,718 million [NVDA-FY2026#0209]",
+    "cited": [
+     "NVDA-FY2026#0209"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:operating_income",
+    "question": "What was NVIDIA's operating income for fiscal year 2026?",
+    "expected_usd": 130387000000.0,
+    "answer": "$130,387 million [NVDA-FY2026#0202]",
+    "cited": [
+     "NVDA-FY2026#0202"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   },
+   {
+    "id": "NVDA-FY2026:equity",
+    "question": "What was NVIDIA's total stockholders' equity at the end of fiscal year 2026?",
+    "expected_usd": 157293000000.0,
+    "answer": "$157,293 million [NVDA-FY2026#0208]",
+    "cited": [
+     "NVDA-FY2026#0208"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true
+   }
+  ]
+ }
+}
