@@ -1,5 +1,7 @@
 # filingqa
 
+[![CI](https://github.com/CH4RL3I/sec-filings-rag/actions/workflows/ci.yml/badge.svg)](https://github.com/CH4RL3I/sec-filings-rag/actions/workflows/ci.yml) ![Python](https://img.shields.io/badge/python-3.11%2B-blue) ![License: MIT](https://img.shields.io/badge/license-MIT-green)
+
 Question answering over SEC 10-K filings with page-level citations, and a harness that measures how often it is actually right.
 
 The chatbot is the small part. The point is the evaluation: a gold question set built automatically from XBRL data, retrieval metrics for every chunking and retrieval configuration, and end-to-end answer and citation scoring.
