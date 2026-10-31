@@ -1,0 +1,1499 @@
+{
+ "evaluation": {
+  "scoring_version": "signed-usd-v2",
+  "evidence_mode": "reviewed",
+  "evidence_version": "reviewed-quotes-v1",
+  "manifest_sha256": "b00c24a71d6bc3e60b43f51b4b42da07587629d3bf0f8efd5628096e55b6ffa2",
+  "generated_questions": 64,
+  "annotated_questions": 20,
+  "selected_questions": 20,
+  "excluded_questions": 44,
+  "semantic_support": "asserted by annotation author; identity and exact quote grounding checked",
+  "answering_version": "source-grounded-usd-v4",
+  "answer_policy": "company-filtered top-100 pool; top-6 seeds plus same-Item neighbours; source extraction then explicit model fallback",
+  "source_citation_policy": "entire contiguous source-context groups, including seed labels and neighbours; not minimal supporting chunks",
+  "citation_metric_limitations": "any-label hit is not citation precision; oracle source-group hits may follow from supplied seed labels; see citation_by_method for separated counts",
+  "e2e_questions": 20
+ },
+ "n_questions": 20,
+ "retrieval": [
+  {
+   "chunking": "fixed",
+   "retriever": "bm25",
+   "n": 20,
+   "recall": {
+    "1": 0.15,
+    "5": 0.15,
+    "10": 0.25,
+    "20": 0.25
+   },
+   "recall_ci": {
+    "1": [
+     0.05236779195949584,
+     0.36042329588695743
+    ],
+    "5": [
+     0.05236779195949584,
+     0.36042329588695743
+    ],
+    "10": [
+     0.11186005278940309,
+     0.4687050099580636
+    ],
+    "20": [
+     0.11186005278940309,
+     0.4687050099580636
+    ]
+   },
+   "mrr": 0.1662289266193494,
+   "ranks": {
+    "AAPL-FY2024:revenue": null,
+    "AAPL-FY2024:rd_expense": 26,
+    "AAPL-FY2025:revenue": null,
+    "AAPL-FY2025:rd_expense": 22,
+    "JPM-FY2024:net_income": null,
+    "JPM-FY2024:operating_cash_flow": 9,
+    "JPM-FY2025:net_income": null,
+    "JPM-FY2025:operating_cash_flow": 10,
+    "KO-FY2024:revenue": null,
+    "KO-FY2024:operating_income": null,
+    "KO-FY2025:revenue": null,
+    "KO-FY2025:operating_income": null,
+    "MSFT-FY2025:revenue": 61,
+    "MSFT-FY2025:net_income": 76,
+    "MSFT-FY2026:revenue": null,
+    "MSFT-FY2026:rd_expense": 1,
+    "NVDA-FY2025:revenue": null,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2026:revenue": null,
+    "NVDA-FY2026:rd_expense": 1
+   }
+  },
+  {
+   "chunking": "fixed",
+   "retriever": "dense",
+   "n": 20,
+   "recall": {
+    "1": 0.15,
+    "5": 0.4,
+    "10": 0.6,
+    "20": 0.7
+   },
+   "recall_ci": {
+    "1": [
+     0.05236779195949584,
+     0.36042329588695743
+    ],
+    "5": [
+     0.21880396741419272,
+     0.613422057684794
+    ],
+    "10": [
+     0.3865779423152061,
+     0.7811960325858074
+    ],
+    "20": [
+     0.4810232237710206,
+     0.854524726031006
+    ]
+   },
+   "mrr": 0.27147473807554456,
+   "ranks": {
+    "AAPL-FY2024:revenue": 9,
+    "AAPL-FY2024:rd_expense": 5,
+    "AAPL-FY2025:revenue": 2,
+    "AAPL-FY2025:rd_expense": 2,
+    "JPM-FY2024:net_income": 28,
+    "JPM-FY2024:operating_cash_flow": 1,
+    "JPM-FY2025:net_income": 13,
+    "JPM-FY2025:operating_cash_flow": 1,
+    "KO-FY2024:revenue": 16,
+    "KO-FY2024:operating_income": 8,
+    "KO-FY2025:revenue": 9,
+    "KO-FY2025:operating_income": 5,
+    "MSFT-FY2025:revenue": 21,
+    "MSFT-FY2025:net_income": 31,
+    "MSFT-FY2026:revenue": 31,
+    "MSFT-FY2026:rd_expense": 1,
+    "NVDA-FY2025:revenue": 50,
+    "NVDA-FY2025:rd_expense": 10,
+    "NVDA-FY2026:revenue": 40,
+    "NVDA-FY2026:rd_expense": 4
+   }
+  },
+  {
+   "chunking": "fixed",
+   "retriever": "hybrid",
+   "n": 20,
+   "recall": {
+    "1": 0.2,
+    "5": 0.35,
+    "10": 0.35,
+    "20": 0.4
+   },
+   "recall_ci": {
+    "1": [
+     0.0806563532712,
+     0.41602172202575993
+    ],
+    "5": [
+     0.18118954786794464,
+     0.5671494897805354
+    ],
+    "10": [
+     0.18118954786794464,
+     0.5671494897805354
+    ],
+    "20": [
+     0.21880396741419272,
+     0.613422057684794
+    ]
+   },
+   "mrr": 0.2781000542528649,
+   "ranks": {
+    "AAPL-FY2024:revenue": 32,
+    "AAPL-FY2024:rd_expense": 3,
+    "AAPL-FY2025:revenue": 21,
+    "AAPL-FY2025:rd_expense": 2,
+    "JPM-FY2024:net_income": 57,
+    "JPM-FY2024:operating_cash_flow": 1,
+    "JPM-FY2025:net_income": 27,
+    "JPM-FY2025:operating_cash_flow": 1,
+    "KO-FY2024:revenue": 38,
+    "KO-FY2024:operating_income": 29,
+    "KO-FY2025:revenue": 20,
+    "KO-FY2025:operating_income": 27,
+    "MSFT-FY2025:revenue": 24,
+    "MSFT-FY2025:net_income": 31,
+    "MSFT-FY2026:revenue": 68,
+    "MSFT-FY2026:rd_expense": 1,
+    "NVDA-FY2025:revenue": 84,
+    "NVDA-FY2025:rd_expense": 3,
+    "NVDA-FY2026:revenue": 74,
+    "NVDA-FY2026:rd_expense": 1
+   }
+  },
+  {
+   "chunking": "section",
+   "retriever": "bm25",
+   "n": 20,
+   "recall": {
+    "1": 0.1,
+    "5": 0.1,
+    "10": 0.2,
+    "20": 0.25
+   },
+   "recall_ci": {
+    "1": [
+     0.027865893984153206,
+     0.30103820641179335
+    ],
+    "5": [
+     0.027865893984153206,
+     0.30103820641179335
+    ],
+    "10": [
+     0.0806563532712,
+     0.41602172202575993
+    ],
+    "20": [
+     0.11186005278940309,
+     0.4687050099580636
+    ]
+   },
+   "mrr": 0.11960451820945488,
+   "ranks": {
+    "AAPL-FY2024:revenue": null,
+    "AAPL-FY2024:rd_expense": null,
+    "AAPL-FY2025:revenue": null,
+    "AAPL-FY2025:rd_expense": null,
+    "JPM-FY2024:net_income": null,
+    "JPM-FY2024:operating_cash_flow": 7,
+    "JPM-FY2025:net_income": null,
+    "JPM-FY2025:operating_cash_flow": 6,
+    "KO-FY2024:revenue": null,
+    "KO-FY2024:operating_income": null,
+    "KO-FY2025:revenue": null,
+    "KO-FY2025:operating_income": null,
+    "MSFT-FY2025:revenue": 53,
+    "MSFT-FY2025:net_income": 73,
+    "MSFT-FY2026:revenue": null,
+    "MSFT-FY2026:rd_expense": 20,
+    "NVDA-FY2025:revenue": null,
+    "NVDA-FY2025:rd_expense": 1,
+    "NVDA-FY2026:revenue": null,
+    "NVDA-FY2026:rd_expense": 1
+   }
+  },
+  {
+   "chunking": "section",
+   "retriever": "dense",
+   "n": 20,
+   "recall": {
+    "1": 0.0,
+    "5": 0.1,
+    "10": 0.35,
+    "20": 0.8
+   },
+   "recall_ci": {
+    "1": [
+     0.0,
+     0.16113012549493322
+    ],
+    "5": [
+     0.027865893984153206,
+     0.30103820641179335
+    ],
+    "10": [
+     0.18118954786794464,
+     0.5671494897805354
+    ],
+    "20": [
+     0.5839782779742401,
+     0.9193436467288
+    ]
+   },
+   "mrr": 0.09247723524436899,
+   "ranks": {
+    "AAPL-FY2024:revenue": 11,
+    "AAPL-FY2024:rd_expense": 13,
+    "AAPL-FY2025:revenue": 3,
+    "AAPL-FY2025:rd_expense": 5,
+    "JPM-FY2024:net_income": 11,
+    "JPM-FY2024:operating_cash_flow": 18,
+    "JPM-FY2025:net_income": 19,
+    "JPM-FY2025:operating_cash_flow": 9,
+    "KO-FY2024:revenue": 20,
+    "KO-FY2024:operating_income": 10,
+    "KO-FY2025:revenue": 15,
+    "KO-FY2025:operating_income": 9,
+    "MSFT-FY2025:revenue": 9,
+    "MSFT-FY2025:net_income": 31,
+    "MSFT-FY2026:revenue": 20,
+    "MSFT-FY2026:rd_expense": 21,
+    "NVDA-FY2025:revenue": 76,
+    "NVDA-FY2025:rd_expense": 13,
+    "NVDA-FY2026:revenue": 79,
+    "NVDA-FY2026:rd_expense": 6
+   }
+  },
+  {
+   "chunking": "section",
+   "retriever": "hybrid",
+   "n": 20,
+   "recall": {
+    "1": 0.05,
+    "5": 0.2,
+    "10": 0.25,
+    "20": 0.4
+   },
+   "recall_ci": {
+    "1": [
+     0.008881219432873136,
+     0.23613589351256675
+    ],
+    "5": [
+     0.0806563532712,
+     0.41602172202575993
+    ],
+    "10": [
+     0.11186005278940309,
+     0.4687050099580636
+    ],
+    "20": [
+     0.21880396741419272,
+     0.613422057684794
+    ]
+   },
+   "mrr": 0.1269767292195237,
+   "ranks": {
+    "AAPL-FY2024:revenue": 29,
+    "AAPL-FY2024:rd_expense": 34,
+    "AAPL-FY2025:revenue": 17,
+    "AAPL-FY2025:rd_expense": 20,
+    "JPM-FY2024:net_income": 29,
+    "JPM-FY2024:operating_cash_flow": 5,
+    "JPM-FY2025:net_income": 40,
+    "JPM-FY2025:operating_cash_flow": 4,
+    "KO-FY2024:revenue": 43,
+    "KO-FY2024:operating_income": 26,
+    "KO-FY2025:revenue": 33,
+    "KO-FY2025:operating_income": 26,
+    "MSFT-FY2025:revenue": 18,
+    "MSFT-FY2025:net_income": 24,
+    "MSFT-FY2026:revenue": 54,
+    "MSFT-FY2026:rd_expense": 9,
+    "NVDA-FY2025:revenue": null,
+    "NVDA-FY2025:rd_expense": 2,
+    "NVDA-FY2026:revenue": null,
+    "NVDA-FY2026:rd_expense": 1
+   }
+  }
+ ],
+ "e2e": [
+  {
+   "label": "fixed + dense",
+   "generator": "source-grounded-usd-v4; fallback=ollama:llama3.2",
+   "n": 20,
+   "accuracy": 0.85,
+   "accuracy_ci": [
+    0.6395767041130426,
+    0.9476322080405041
+   ],
+   "citation": 0.3,
+   "cited_gold": 0.3,
+   "abstained": 0.0,
+   "seconds_per_question": 7.018825709819794,
+   "methods": {
+    "model-fallback": 16,
+    "source-extracted": 4
+   },
+   "model_calls": 16,
+   "citation_by_method": {
+    "model-fallback": {
+     "n": 16,
+     "cited_label": 3,
+     "correct_and_cited_label": 3,
+     "model_calls": 16,
+     "cited_label_rate": 0.1875,
+     "correct_and_cited_label_rate": 0.1875
+    },
+    "source-extracted": {
+     "n": 4,
+     "cited_label": 3,
+     "correct_and_cited_label": 3,
+     "model_calls": 0,
+     "cited_label_rate": 0.75,
+     "correct_and_cited_label_rate": 0.75
+    }
+   }
+  },
+  {
+   "label": "oracle (fixed)",
+   "generator": "source-grounded-usd-v4; fallback=ollama:llama3.2",
+   "n": 20,
+   "accuracy": 1.0,
+   "accuracy_ci": [
+    0.8388698745050667,
+    1.0
+   ],
+   "citation": 1.0,
+   "cited_gold": 1.0,
+   "abstained": 0.0,
+   "seconds_per_question": 2.6609542965888977,
+   "methods": {
+    "model-fallback": 9,
+    "source-extracted": 11
+   },
+   "model_calls": 9,
+   "citation_by_method": {
+    "model-fallback": {
+     "n": 9,
+     "cited_label": 9,
+     "correct_and_cited_label": 9,
+     "model_calls": 9,
+     "cited_label_rate": 1.0,
+     "correct_and_cited_label_rate": 1.0
+    },
+    "source-extracted": {
+     "n": 11,
+     "cited_label": 11,
+     "correct_and_cited_label": 11,
+     "model_calls": 0,
+     "cited_label_rate": 1.0,
+     "correct_and_cited_label_rate": 1.0
+    }
+   }
+  }
+ ],
+ "e2e_details": {
+  "fixed + dense": [
+   {
+    "id": "AAPL-FY2024:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2024?",
+    "expected_usd": 391035000000.0,
+    "answer": "$391,035 million [AAPL-FY2024#0115]",
+    "cited": [
+     "AAPL-FY2024#0115"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "AAPL-FY2024:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2024?",
+    "expected_usd": 31370000000.0,
+    "answer": "$31,370 million [AAPL-FY2024#0130]",
+    "cited": [
+     "AAPL-FY2024#0130"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "AAPL-FY2025:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2025?",
+    "expected_usd": 416161000000.0,
+    "answer": "$416,161 million [AAPL-FY2025#0089]",
+    "cited": [
+     "AAPL-FY2025#0089"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "AAPL-FY2025:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2025?",
+    "expected_usd": 34550000000.0,
+    "answer": "$34,550 million [AAPL-FY2025#0092]",
+    "cited": [
+     "AAPL-FY2025#0092"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "JPM-FY2024:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2024?",
+    "expected_usd": 58471000000.0,
+    "answer": "$24,846 [JPM-FY2024#0123]",
+    "cited": [],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "JPM-FY2024:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": -42012000000.0,
+    "answer": "-$42,012,000,000 [JPM-FY2025#0197, JPM-FY2025#0198, JPM-FY2025#0199]",
+    "cited": [
+     "JPM-FY2025#0197",
+     "JPM-FY2025#0198",
+     "JPM-FY2025#0199"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "JPM-FY2025#0197",
+      "quote": "Long-term debt increased driven by net issuances of structured notes in Markets due to client demand and an increase in the fair value of such instruments, as well as net issuances of long-term debt in Treasury and CIO, partially offset by a net reduction in Federal Home Loan Bank (\"FHLB\") advances. Refer to Liquidity Risk Management on pages 100\u2013107 for additional information.\nStockholders\u2019 equity increased, reflecting:\n\u2022net income, and\n\u2022net unrealized gains in AOCI in Treasury and CIO, driven by the impact of lower interest rates on AFS securities and cash flow hedges, and spreads tightening on AFS securities,\nlargely offset by\n\u2022the impact of capital actions, including net repurchases of common shares and dividend payments on common and preferred stock.\nRefer to Consolidated Statements of changes in stockholders\u2019 equity on page 168, Capital Actions on page 97, and Note 24 for additional information.\nJPMorgan Chase & Co./2025 Form 10-K | 57\nConsolidated cash flows analysis\nThe following is a discussion of cash flow activities during the years ended December 31, 2025 and 2024. Refer to Consolidated cash flows analysis on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) |",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0198",
+      "quote": "on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974\nInvesting activities | (265,565) | (163,403) | 67,643\nFinancing activities | 269,533 | 63,447 | (25,571)\nEffect of exchange rate changes on cash | 17,835 | (12,866) | 1,871\nNet increase/(decrease) in cash and due from banks and deposits with banks | $ (125,979) | $ (154,834) | $56,917\nOperating activities\nJPMorganChase\u2019s operating assets and liabilities primarily support the Firm\u2019s lending and capital markets activities. These assets and liabilities can vary significantly in the normal course of business due to the amount and timing of cash flows, which are affected by client-driven and risk management activities and market conditions. The Firm believes that cash flows from operations, available cash and other liquidity sources, and its capacity to generate cash through secured and unsecured sources, are sufficient to meet its operating liquidity needs.\n\u2022In 2025, cash used resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0199",
+      "quote": "resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash used resulted from higher trading assets and higher securities borrowed, largely offset by net income excluding non-cash adjustments.\nInvesting activities\nThe Firm\u2019s investing activities predominantly include originating held-for-investment loans, and investing in the investment securities portfolio and other short-term instruments.\n\u2022In 2025, cash used resulted from net loan originations, net purchases of investment securities and higher securities purchased under resale agreements.\n\u2022In 2024, cash used resulted from net purchases of investment securities, net loan originations and higher securities purchased under resale agreements, partially offset by proceeds from sales and securitizations of loans held-for-investment.\nFinancing activities\nThe Firm\u2019s financing activities include acquiring customer deposits and issuing long-term debt and preferred stock.\n\u2022In 2025, cash provided primarily reflected higher deposits, higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings,\n\u2022In 2024, cash provided primarily reflected higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings, partially offset by net redemption of preferred stock.\n\u2022For both periods, cash was used for repurchases of common stock and cash dividends on common",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "JPM-FY2025:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2025?",
+    "expected_usd": 57048000000.0,
+    "answer": "$57,048,000,000 [JPM-FY2025#0523, JPM-FY2025#0524, JPM-FY2025#0525]",
+    "cited": [
+     "JPM-FY2025#0523",
+     "JPM-FY2025#0524",
+     "JPM-FY2025#0525"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "JPM-FY2025#0523",
+      "quote": "interest income | 95,443 | 92,583 | 89,267\nTotal net revenue | 182,447 | 177,556 | 158,104\nProvision for credit losses | 14,212 | 10,678 | 9,320\nNoninterest expense\nCompensation expense | 54,487 | 51,357 | 46,465\nOccupancy expense | 5,461 | 5,026 | 4,590\nTechnology, communications and equipment expense | 11,029 | 9,831 | 9,246\nProfessional and outside services | 12,356 | 11,057 | 10,235\nMarketing | 5,531 | 4,974 | 4,591\nOther expense | 6,776 | 9,552 | 12,045\nTotal noninterest expense | 95,640 | 91,797 | 87,172\nIncome before income tax expense | 72,595 | 75,081 | 61,612\nIncome tax expense | 15,547 | 16,610 | 12,060\nNet income | $57,048 | $58,471 | $49,552\nNet income applicable to common stockholders | $55,681 | $56,868 | $47,760\nNet income per common share data\nBasic earnings per share | $20.05 | $19.79 | $16.25\nDiluted earnings per share | 20.02 | 19.75 | 16.23\nWeighted-average basic shares | 2,776.5 | 2,873.9 | 2,938.6\nWeighted-average diluted shares | 2,781.5 | 2,879.0 | 2,943.1\nThe Notes to Consolidated Financial Statements are an integral part of these statements.\nJPMorgan Chase & Co./2025 Form 10-K | 165\nJPMorgan Chase & Co.\nConsolidated statements of comprehensive income\nYear ended December 31, (in millions) | 2025 | 2024 | 2023\nNet income | $57,048",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year ended December 31, (in millions) | 2025 | 2024 | 2023",
+      "unit_caption": "Year ended December 31, (in millions) | 2025 | 2024 | 2023",
+      "metric_row": "Net income | $57,048 | $58,471 | $49,552"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0524",
+      "quote": "are an integral part of these statements.\nJPMorgan Chase & Co./2025 Form 10-K | 165\nJPMorgan Chase & Co.\nConsolidated statements of comprehensive income\nYear ended December 31, (in millions) | 2025 | 2024 | 2023\nNet income | $57,048 | $58,471 | $49,552\nOther comprehensive income/(loss), after\u2013tax\nUnrealized gains/(losses) on investment securities | 3,569 | ( 87 ) | 5,381\nTranslation adjustments, net of hedges | 1,339 | ( 858 ) | 329\nFair value hedges | 64 | ( 87 ) | ( 101 )\nCash flow hedges | 3,388 | ( 882 ) | 1,724\nDefined benefit pension and OPEB plans | 579 | ( 63 ) | 373\nDVA on fair value option elected liabilities | ( 773 ) | ( 36 ) | ( 808 )\nTotal other comprehensive income/(loss), after\u2013tax | 8,166 | ( 2,013 ) | 6,898\nComprehensive income | $65,214 | $56,458 | $56,450\nThe Notes to Consolidated Financial Statements are an integral part of these statements.\n166 | JPMorgan Chase & Co./2025 Form 10-K\nJPMorgan Chase & Co.\nConsolidated balance sheets\nDecember 31, (in millions, except share data) | 2025 | 2024\nAssets\nCash and due from banks | $21,742 | $23,372\nDeposits with banks | 321,596 | 445,945\nFederal funds sold and securities purchased under resale agreements (included $ 327,018",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year ended December 31, (in millions) | 2025 | 2024 | 2023",
+      "unit_caption": "Year ended December 31, (in millions) | 2025 | 2024 | 2023",
+      "metric_row": "Net income | $57,048 | $58,471 | $49,552"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0525",
+      "quote": "December 31, (in millions, except share data) | 2025 | 2024\nAssets\nCash and due from banks | $21,742 | $23,372\nDeposits with banks | 321,596 | 445,945\nFederal funds sold and securities purchased under resale agreements (included $ 327,018 and $ 286,771 at fair value) | 336,426 | 295,001\nSecurities borrowed (included $ 98,111 and $ 83,962 at fair value) | 286,191 | 219,546\nTrading assets (included assets pledged of $ 165,927 and $ 136,070 ) | 802,873 | 637,784\nAvailable-for-sale securities (amortized cost of $ 507,226 and $ 411,045 ; included assets pledged of $ 7,735 and $ 10,162 ) | 507,198 | 406,852\nHeld-to-maturity securities | 270,134 | 274,468\nInvestment securities, net of allowance for credit losses | 777,332 | 681,320\nLoans (included $ 70,684 and $ 41,350 at fair value) | 1,493,429 | 1,347,988\nAllowance for loan losses | ( 25,765 ) | ( 24,345 )\nLoans, net of allowance for loan losses | 1,467,664 | 1,323,643\nAccrued interest and accounts receivable | 111,599 | 101,223\nPremises and equipment | 36,244 | 32,223\nGoodwill, MSRs and other intangible assets | 64,458 | 64,560\nOther assets (included $ 15,849 and $ 15,122 at fair value and assets pledged of $ 11,984 and $ 6,288 ) | 198,775 | 178,197\nTotal assets (a) | $4,424,900 | $4,002,814\nLiabilities",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year ended December 31, (in millions) | 2025 | 2024 | 2023",
+      "unit_caption": "Year ended December 31, (in millions) | 2025 | 2024 | 2023",
+      "metric_row": "Net income | $57,048 | $58,471 | $49,552"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "JPM-FY2025:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": -147782000000.0,
+    "answer": "-$147,782,000,000 [JPM-FY2025#0197, JPM-FY2025#0198, JPM-FY2025#0199]",
+    "cited": [
+     "JPM-FY2025#0197",
+     "JPM-FY2025#0198",
+     "JPM-FY2025#0199"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "JPM-FY2025#0197",
+      "quote": "Long-term debt increased driven by net issuances of structured notes in Markets due to client demand and an increase in the fair value of such instruments, as well as net issuances of long-term debt in Treasury and CIO, partially offset by a net reduction in Federal Home Loan Bank (\"FHLB\") advances. Refer to Liquidity Risk Management on pages 100\u2013107 for additional information.\nStockholders\u2019 equity increased, reflecting:\n\u2022net income, and\n\u2022net unrealized gains in AOCI in Treasury and CIO, driven by the impact of lower interest rates on AFS securities and cash flow hedges, and spreads tightening on AFS securities,\nlargely offset by\n\u2022the impact of capital actions, including net repurchases of common shares and dividend payments on common and preferred stock.\nRefer to Consolidated Statements of changes in stockholders\u2019 equity on page 168, Capital Actions on page 97, and Note 24 for additional information.\nJPMorgan Chase & Co./2025 Form 10-K | 57\nConsolidated cash flows analysis\nThe following is a discussion of cash flow activities during the years ended December 31, 2025 and 2024. Refer to Consolidated cash flows analysis on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) |",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0198",
+      "quote": "on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974\nInvesting activities | (265,565) | (163,403) | 67,643\nFinancing activities | 269,533 | 63,447 | (25,571)\nEffect of exchange rate changes on cash | 17,835 | (12,866) | 1,871\nNet increase/(decrease) in cash and due from banks and deposits with banks | $ (125,979) | $ (154,834) | $56,917\nOperating activities\nJPMorganChase\u2019s operating assets and liabilities primarily support the Firm\u2019s lending and capital markets activities. These assets and liabilities can vary significantly in the normal course of business due to the amount and timing of cash flows, which are affected by client-driven and risk management activities and market conditions. The Firm believes that cash flows from operations, available cash and other liquidity sources, and its capacity to generate cash through secured and unsecured sources, are sufficient to meet its operating liquidity needs.\n\u2022In 2025, cash used resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0199",
+      "quote": "resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash used resulted from higher trading assets and higher securities borrowed, largely offset by net income excluding non-cash adjustments.\nInvesting activities\nThe Firm\u2019s investing activities predominantly include originating held-for-investment loans, and investing in the investment securities portfolio and other short-term instruments.\n\u2022In 2025, cash used resulted from net loan originations, net purchases of investment securities and higher securities purchased under resale agreements.\n\u2022In 2024, cash used resulted from net purchases of investment securities, net loan originations and higher securities purchased under resale agreements, partially offset by proceeds from sales and securitizations of loans held-for-investment.\nFinancing activities\nThe Firm\u2019s financing activities include acquiring customer deposits and issuing long-term debt and preferred stock.\n\u2022In 2025, cash provided primarily reflected higher deposits, higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings,\n\u2022In 2024, cash provided primarily reflected higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings, partially offset by net redemption of preferred stock.\n\u2022For both periods, cash was used for repurchases of common stock and cash dividends on common",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "KO-FY2024:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2024?",
+    "expected_usd": 47061000000.0,
+    "answer": "$43,004 million [KO-FY2024#0460]",
+    "cited": [
+     "KO-FY2024#0460"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "KO-FY2024:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2024?",
+    "expected_usd": 9992000000.0,
+    "answer": "$4,336 million [KO-FY2024#0220]",
+    "cited": [
+     "KO-FY2024#0220"
+    ],
+    "correct": false,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "KO-FY2025:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2025?",
+    "expected_usd": 47941000000.0,
+    "answer": "$47,941 million [KO-FY2025#0208]",
+    "cited": [
+     "KO-FY2025#0208"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "KO-FY2025:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2025?",
+    "expected_usd": 13762000000.0,
+    "answer": "$13,762,000,000 [KO-FY2025#0264, KO-FY2025#0265, KO-FY2025#0266]",
+    "cited": [
+     "KO-FY2025#0264",
+     "KO-FY2025#0265",
+     "KO-FY2025#0266"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "KO-FY2025#0264",
+      "quote": "| 62\nConsolidated Balance Sheets | 63\nConsolidated Statements of Cash Flows | 64\nConsolidated Statements of Shareowners\u2019 Equity | 65\nNotes to Consolidated Financial Statements | 66\nNote 1 | Business and Summary of Significant Accounting Policies | 66\nNote 2 | Acquisitions and Divestitures | 73\nNote 3 | Net Operating Revenues | 74\nNote 4 | Investments | 76\nNote 5 | Hedging Transactions and Derivative Financial Instruments | 78\nNote 6 | Equity Method Investments | 85\nNote 7 | Goodwill | 86\nNote 8 | Accounts Payable and Accrued Expenses | 86\nNote 9 | Supply Chain Finance Program | 87\nNote 10 | Leases | 87\nNote 11 | Debt and Borrowing Arrangements | 88\nNote 12 | Commitments and Contingencies | 89\nNote 13 | Stock-Based Compensation Plans | 92\nNote 14 | Pension and Other Postretirement Benefit Plans | 95\nNote 15 | Income Taxes | 101\nNote 16 | Other Comprehensive Income | 106\nNote 17 | Fair Value Measurements | 109\nNote 18 | Significant Operating and Nonoperating Items | 114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     },
+     {
+      "chunk_id": "KO-FY2025#0265",
+      "quote": "114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB ID: 42 ) | 121\nReport of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting | 123\n60\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311\nInterest income | 786 | 988 | 907\nInterest expense | 1,654 | 1,656 | 1,527\nEquity income (loss) \u2014 net | 2,031 | 1,770 | 1,691\nOther income (loss) \u2014 net | 1,073 | 1,992 | 570\nIncome Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | (",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     },
+     {
+      "chunk_id": "KO-FY2025#0266",
+      "quote": "Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | ( 11 )\nNet Income Attributable to Shareowners of The Coca-Cola Company | $13,107 | $10,631 | $10,714\nBasic Net Income Per Share 1 | $3.05 | $2.47 | $2.48\nDiluted Net Income Per Share 1 | $3.04 | $2.46 | $2.47\nAverage Shares Outstanding \u2014 Basic | 4,303 | 4,309 | 4,323\nEffect of dilutive securities | 10 | 11 | 16\nAverage Shares Outstanding \u2014 Diluted | 4,313 | 4,320 | 4,339\n1 Calculated based on net income attributable to shareowners of The Coca-Cola Company.\nRefer to Notes to Consolidated Financial Statements.\n61\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n(In millions)\nYear Ended December 31, | 2025 | 2024 | 2023\nConsolidated Net Income | $13,137 | $10,649 | $10,703\nOther Comprehensive Income:\nNet foreign currency translation adjustments | 2,868 | ( 2,893 ) | 736\nNet gains (losses) on derivatives | ( 360 ) | 270 | ( 178 )\nNet change in unrealized gains (losses) on available-for-sale debt securities | 38 | ( 63 ) | 24\nNet change in pension and other",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "MSFT-FY2025:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2025?",
+    "expected_usd": 281724000000.0,
+    "answer": "$281,724 million [MSFT-FY2025#0240]",
+    "cited": [
+     "MSFT-FY2025#0240"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "MSFT-FY2025:net_income",
+    "question": "What was Microsoft's net income for fiscal year 2025?",
+    "expected_usd": 101832000000.0,
+    "answer": "$101,832 million [MSFT-FY2025#0156#0240]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "MSFT-FY2026:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2026?",
+    "expected_usd": 331839000000.0,
+    "answer": "$331,839 million [MSFT-FY2026#0228]",
+    "cited": [
+     "MSFT-FY2026#0228"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "MSFT-FY2026:rd_expense",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+    "expected_usd": 35562000000.0,
+    "answer": "$35,562 million [MSFT-FY2026#0129]",
+    "cited": [],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "NVDA-FY2025:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2025?",
+    "expected_usd": 130497000000.0,
+    "answer": "$130.497 billion [NVDA-FY2025#0165]",
+    "cited": [
+     "NVDA-FY2025#0165"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "NVDA-FY2025:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2025?",
+    "expected_usd": 12914000000.0,
+    "answer": "$12,914 million [NVDA-FY2025#0179]",
+    "cited": [
+     "NVDA-FY2025#0179"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "NVDA-FY2026:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2026?",
+    "expected_usd": 215938000000.0,
+    "answer": "$215.9 billion [NVDA-FY2026#0159]",
+    "cited": [
+     "NVDA-FY2026#0159"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": false,
+    "cited_gold_and_correct": false,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "NVDA-FY2026:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2026?",
+    "expected_usd": 18497000000.0,
+    "answer": "$18,497 million [NVDA-FY2026#0172]",
+    "cited": [
+     "NVDA-FY2026#0172"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   }
+  ],
+  "oracle (fixed)": [
+   {
+    "id": "AAPL-FY2024:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2024?",
+    "expected_usd": 391035000000.0,
+    "answer": "$391,035 million [AAPL-FY2025#0088]",
+    "cited": [
+     "AAPL-FY2025#0088"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "AAPL-FY2024:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2024?",
+    "expected_usd": 31370000000.0,
+    "answer": "$31,370 million [AAPL-FY2025#0092]",
+    "cited": [
+     "AAPL-FY2025#0092"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "AAPL-FY2025:revenue",
+    "question": "What was Apple's total revenue for fiscal year 2025?",
+    "expected_usd": 416161000000.0,
+    "answer": "$416,161 million [AAPL-FY2025#0088]",
+    "cited": [
+     "AAPL-FY2025#0088"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "AAPL-FY2025:rd_expense",
+    "question": "How much did Apple spend on research and development in fiscal year 2025?",
+    "expected_usd": 34550000000.0,
+    "answer": "$34,550 million [AAPL-FY2025#0092]",
+    "cited": [
+     "AAPL-FY2025#0092"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "JPM-FY2024:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2024?",
+    "expected_usd": 58471000000.0,
+    "answer": "$58,471 million [JPM-FY2025#0159]",
+    "cited": [
+     "JPM-FY2025#0159"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "JPM-FY2024:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2024?",
+    "expected_usd": -42012000000.0,
+    "answer": "-$42,012,000,000 [JPM-FY2025#0197, JPM-FY2025#0198, JPM-FY2025#0199]",
+    "cited": [
+     "JPM-FY2025#0197",
+     "JPM-FY2025#0198",
+     "JPM-FY2025#0199"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "JPM-FY2025#0197",
+      "quote": "Long-term debt increased driven by net issuances of structured notes in Markets due to client demand and an increase in the fair value of such instruments, as well as net issuances of long-term debt in Treasury and CIO, partially offset by a net reduction in Federal Home Loan Bank (\"FHLB\") advances. Refer to Liquidity Risk Management on pages 100\u2013107 for additional information.\nStockholders\u2019 equity increased, reflecting:\n\u2022net income, and\n\u2022net unrealized gains in AOCI in Treasury and CIO, driven by the impact of lower interest rates on AFS securities and cash flow hedges, and spreads tightening on AFS securities,\nlargely offset by\n\u2022the impact of capital actions, including net repurchases of common shares and dividend payments on common and preferred stock.\nRefer to Consolidated Statements of changes in stockholders\u2019 equity on page 168, Capital Actions on page 97, and Note 24 for additional information.\nJPMorgan Chase & Co./2025 Form 10-K | 57\nConsolidated cash flows analysis\nThe following is a discussion of cash flow activities during the years ended December 31, 2025 and 2024. Refer to Consolidated cash flows analysis on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) |",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0198",
+      "quote": "on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974\nInvesting activities | (265,565) | (163,403) | 67,643\nFinancing activities | 269,533 | 63,447 | (25,571)\nEffect of exchange rate changes on cash | 17,835 | (12,866) | 1,871\nNet increase/(decrease) in cash and due from banks and deposits with banks | $ (125,979) | $ (154,834) | $56,917\nOperating activities\nJPMorganChase\u2019s operating assets and liabilities primarily support the Firm\u2019s lending and capital markets activities. These assets and liabilities can vary significantly in the normal course of business due to the amount and timing of cash flows, which are affected by client-driven and risk management activities and market conditions. The Firm believes that cash flows from operations, available cash and other liquidity sources, and its capacity to generate cash through secured and unsecured sources, are sufficient to meet its operating liquidity needs.\n\u2022In 2025, cash used resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0199",
+      "quote": "resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash used resulted from higher trading assets and higher securities borrowed, largely offset by net income excluding non-cash adjustments.\nInvesting activities\nThe Firm\u2019s investing activities predominantly include originating held-for-investment loans, and investing in the investment securities portfolio and other short-term instruments.\n\u2022In 2025, cash used resulted from net loan originations, net purchases of investment securities and higher securities purchased under resale agreements.\n\u2022In 2024, cash used resulted from net purchases of investment securities, net loan originations and higher securities purchased under resale agreements, partially offset by proceeds from sales and securitizations of loans held-for-investment.\nFinancing activities\nThe Firm\u2019s financing activities include acquiring customer deposits and issuing long-term debt and preferred stock.\n\u2022In 2025, cash provided primarily reflected higher deposits, higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings,\n\u2022In 2024, cash provided primarily reflected higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings, partially offset by net redemption of preferred stock.\n\u2022For both periods, cash was used for repurchases of common stock and cash dividends on common",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "JPM-FY2025:net_income",
+    "question": "What was JPMorgan Chase's net income for fiscal year 2025?",
+    "expected_usd": 57048000000.0,
+    "answer": "$57,048 million [JPM-FY2025#0159]",
+    "cited": [
+     "JPM-FY2025#0159"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "JPM-FY2025:operating_cash_flow",
+    "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2025?",
+    "expected_usd": -147782000000.0,
+    "answer": "-$147,782,000,000 [JPM-FY2025#0197, JPM-FY2025#0198, JPM-FY2025#0199]",
+    "cited": [
+     "JPM-FY2025#0197",
+     "JPM-FY2025#0198",
+     "JPM-FY2025#0199"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "JPM-FY2025#0197",
+      "quote": "Long-term debt increased driven by net issuances of structured notes in Markets due to client demand and an increase in the fair value of such instruments, as well as net issuances of long-term debt in Treasury and CIO, partially offset by a net reduction in Federal Home Loan Bank (\"FHLB\") advances. Refer to Liquidity Risk Management on pages 100\u2013107 for additional information.\nStockholders\u2019 equity increased, reflecting:\n\u2022net income, and\n\u2022net unrealized gains in AOCI in Treasury and CIO, driven by the impact of lower interest rates on AFS securities and cash flow hedges, and spreads tightening on AFS securities,\nlargely offset by\n\u2022the impact of capital actions, including net repurchases of common shares and dividend payments on common and preferred stock.\nRefer to Consolidated Statements of changes in stockholders\u2019 equity on page 168, Capital Actions on page 97, and Note 24 for additional information.\nJPMorgan Chase & Co./2025 Form 10-K | 57\nConsolidated cash flows analysis\nThe following is a discussion of cash flow activities during the years ended December 31, 2025 and 2024. Refer to Consolidated cash flows analysis on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) |",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0198",
+      "quote": "on page 66 of the Firm\u2019s 2024 Form 10-K for a discussion of the 2023 activities.\n(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974\nInvesting activities | (265,565) | (163,403) | 67,643\nFinancing activities | 269,533 | 63,447 | (25,571)\nEffect of exchange rate changes on cash | 17,835 | (12,866) | 1,871\nNet increase/(decrease) in cash and due from banks and deposits with banks | $ (125,979) | $ (154,834) | $56,917\nOperating activities\nJPMorganChase\u2019s operating assets and liabilities primarily support the Firm\u2019s lending and capital markets activities. These assets and liabilities can vary significantly in the normal course of business due to the amount and timing of cash flows, which are affected by client-driven and risk management activities and market conditions. The Firm believes that cash flows from operations, available cash and other liquidity sources, and its capacity to generate cash through secured and unsecured sources, are sufficient to meet its operating liquidity needs.\n\u2022In 2025, cash used resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     },
+     {
+      "chunk_id": "JPM-FY2025#0199",
+      "quote": "resulted from higher trading assets, higher securities borrowed, net originations and purchases of loans held-for-sale, higher other assets and higher accrued interest and accounts receivable, partially offset by net income excluding non-cash adjustments, and higher trading liabilities.\n\u2022In 2024, cash used resulted from higher trading assets and higher securities borrowed, largely offset by net income excluding non-cash adjustments.\nInvesting activities\nThe Firm\u2019s investing activities predominantly include originating held-for-investment loans, and investing in the investment securities portfolio and other short-term instruments.\n\u2022In 2025, cash used resulted from net loan originations, net purchases of investment securities and higher securities purchased under resale agreements.\n\u2022In 2024, cash used resulted from net purchases of investment securities, net loan originations and higher securities purchased under resale agreements, partially offset by proceeds from sales and securitizations of loans held-for-investment.\nFinancing activities\nThe Firm\u2019s financing activities include acquiring customer deposits and issuing long-term debt and preferred stock.\n\u2022In 2025, cash provided primarily reflected higher deposits, higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings,\n\u2022In 2024, cash provided primarily reflected higher securities loaned or sold under repurchase agreements and net proceeds from long- and short-term borrowings, partially offset by net redemption of preferred stock.\n\u2022For both periods, cash was used for repurchases of common stock and cash dividends on common",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "2025 | 2024 | 2023",
+      "unit_caption": "(in millions) | Year ended December 31,",
+      "metric_row": "Operating activities | $ (147,782) | $ (42,012) | $12,974"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "KO-FY2024:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2024?",
+    "expected_usd": 47061000000.0,
+    "answer": "$47,061,000,000 [KO-FY2025#0264, KO-FY2025#0265, KO-FY2025#0266]",
+    "cited": [
+     "KO-FY2025#0264",
+     "KO-FY2025#0265",
+     "KO-FY2025#0266"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "KO-FY2025#0264",
+      "quote": "| 62\nConsolidated Balance Sheets | 63\nConsolidated Statements of Cash Flows | 64\nConsolidated Statements of Shareowners\u2019 Equity | 65\nNotes to Consolidated Financial Statements | 66\nNote 1 | Business and Summary of Significant Accounting Policies | 66\nNote 2 | Acquisitions and Divestitures | 73\nNote 3 | Net Operating Revenues | 74\nNote 4 | Investments | 76\nNote 5 | Hedging Transactions and Derivative Financial Instruments | 78\nNote 6 | Equity Method Investments | 85\nNote 7 | Goodwill | 86\nNote 8 | Accounts Payable and Accrued Expenses | 86\nNote 9 | Supply Chain Finance Program | 87\nNote 10 | Leases | 87\nNote 11 | Debt and Borrowing Arrangements | 88\nNote 12 | Commitments and Contingencies | 89\nNote 13 | Stock-Based Compensation Plans | 92\nNote 14 | Pension and Other Postretirement Benefit Plans | 95\nNote 15 | Income Taxes | 101\nNote 16 | Other Comprehensive Income | 106\nNote 17 | Fair Value Measurements | 109\nNote 18 | Significant Operating and Nonoperating Items | 114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Net Operating Revenues | $47,941 | $47,061 | $45,754"
+     },
+     {
+      "chunk_id": "KO-FY2025#0265",
+      "quote": "114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB ID: 42 ) | 121\nReport of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting | 123\n60\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311\nInterest income | 786 | 988 | 907\nInterest expense | 1,654 | 1,656 | 1,527\nEquity income (loss) \u2014 net | 2,031 | 1,770 | 1,691\nOther income (loss) \u2014 net | 1,073 | 1,992 | 570\nIncome Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | (",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Net Operating Revenues | $47,941 | $47,061 | $45,754"
+     },
+     {
+      "chunk_id": "KO-FY2025#0266",
+      "quote": "Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | ( 11 )\nNet Income Attributable to Shareowners of The Coca-Cola Company | $13,107 | $10,631 | $10,714\nBasic Net Income Per Share 1 | $3.05 | $2.47 | $2.48\nDiluted Net Income Per Share 1 | $3.04 | $2.46 | $2.47\nAverage Shares Outstanding \u2014 Basic | 4,303 | 4,309 | 4,323\nEffect of dilutive securities | 10 | 11 | 16\nAverage Shares Outstanding \u2014 Diluted | 4,313 | 4,320 | 4,339\n1 Calculated based on net income attributable to shareowners of The Coca-Cola Company.\nRefer to Notes to Consolidated Financial Statements.\n61\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n(In millions)\nYear Ended December 31, | 2025 | 2024 | 2023\nConsolidated Net Income | $13,137 | $10,649 | $10,703\nOther Comprehensive Income:\nNet foreign currency translation adjustments | 2,868 | ( 2,893 ) | 736\nNet gains (losses) on derivatives | ( 360 ) | 270 | ( 178 )\nNet change in unrealized gains (losses) on available-for-sale debt securities | 38 | ( 63 ) | 24\nNet change in pension and other",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Net Operating Revenues | $47,941 | $47,061 | $45,754"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "KO-FY2024:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2024?",
+    "expected_usd": 9992000000.0,
+    "answer": "$9,992,000,000 [KO-FY2025#0264, KO-FY2025#0265, KO-FY2025#0266]",
+    "cited": [
+     "KO-FY2025#0264",
+     "KO-FY2025#0265",
+     "KO-FY2025#0266"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "KO-FY2025#0264",
+      "quote": "| 62\nConsolidated Balance Sheets | 63\nConsolidated Statements of Cash Flows | 64\nConsolidated Statements of Shareowners\u2019 Equity | 65\nNotes to Consolidated Financial Statements | 66\nNote 1 | Business and Summary of Significant Accounting Policies | 66\nNote 2 | Acquisitions and Divestitures | 73\nNote 3 | Net Operating Revenues | 74\nNote 4 | Investments | 76\nNote 5 | Hedging Transactions and Derivative Financial Instruments | 78\nNote 6 | Equity Method Investments | 85\nNote 7 | Goodwill | 86\nNote 8 | Accounts Payable and Accrued Expenses | 86\nNote 9 | Supply Chain Finance Program | 87\nNote 10 | Leases | 87\nNote 11 | Debt and Borrowing Arrangements | 88\nNote 12 | Commitments and Contingencies | 89\nNote 13 | Stock-Based Compensation Plans | 92\nNote 14 | Pension and Other Postretirement Benefit Plans | 95\nNote 15 | Income Taxes | 101\nNote 16 | Other Comprehensive Income | 106\nNote 17 | Fair Value Measurements | 109\nNote 18 | Significant Operating and Nonoperating Items | 114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     },
+     {
+      "chunk_id": "KO-FY2025#0265",
+      "quote": "114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB ID: 42 ) | 121\nReport of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting | 123\n60\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311\nInterest income | 786 | 988 | 907\nInterest expense | 1,654 | 1,656 | 1,527\nEquity income (loss) \u2014 net | 2,031 | 1,770 | 1,691\nOther income (loss) \u2014 net | 1,073 | 1,992 | 570\nIncome Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | (",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     },
+     {
+      "chunk_id": "KO-FY2025#0266",
+      "quote": "Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | ( 11 )\nNet Income Attributable to Shareowners of The Coca-Cola Company | $13,107 | $10,631 | $10,714\nBasic Net Income Per Share 1 | $3.05 | $2.47 | $2.48\nDiluted Net Income Per Share 1 | $3.04 | $2.46 | $2.47\nAverage Shares Outstanding \u2014 Basic | 4,303 | 4,309 | 4,323\nEffect of dilutive securities | 10 | 11 | 16\nAverage Shares Outstanding \u2014 Diluted | 4,313 | 4,320 | 4,339\n1 Calculated based on net income attributable to shareowners of The Coca-Cola Company.\nRefer to Notes to Consolidated Financial Statements.\n61\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n(In millions)\nYear Ended December 31, | 2025 | 2024 | 2023\nConsolidated Net Income | $13,137 | $10,649 | $10,703\nOther Comprehensive Income:\nNet foreign currency translation adjustments | 2,868 | ( 2,893 ) | 736\nNet gains (losses) on derivatives | ( 360 ) | 270 | ( 178 )\nNet change in unrealized gains (losses) on available-for-sale debt securities | 38 | ( 63 ) | 24\nNet change in pension and other",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "KO-FY2025:revenue",
+    "question": "What was Coca-Cola's total revenue for fiscal year 2025?",
+    "expected_usd": 47941000000.0,
+    "answer": "$47,941,000,000 [KO-FY2025#0264, KO-FY2025#0265, KO-FY2025#0266]",
+    "cited": [
+     "KO-FY2025#0264",
+     "KO-FY2025#0265",
+     "KO-FY2025#0266"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "KO-FY2025#0264",
+      "quote": "| 62\nConsolidated Balance Sheets | 63\nConsolidated Statements of Cash Flows | 64\nConsolidated Statements of Shareowners\u2019 Equity | 65\nNotes to Consolidated Financial Statements | 66\nNote 1 | Business and Summary of Significant Accounting Policies | 66\nNote 2 | Acquisitions and Divestitures | 73\nNote 3 | Net Operating Revenues | 74\nNote 4 | Investments | 76\nNote 5 | Hedging Transactions and Derivative Financial Instruments | 78\nNote 6 | Equity Method Investments | 85\nNote 7 | Goodwill | 86\nNote 8 | Accounts Payable and Accrued Expenses | 86\nNote 9 | Supply Chain Finance Program | 87\nNote 10 | Leases | 87\nNote 11 | Debt and Borrowing Arrangements | 88\nNote 12 | Commitments and Contingencies | 89\nNote 13 | Stock-Based Compensation Plans | 92\nNote 14 | Pension and Other Postretirement Benefit Plans | 95\nNote 15 | Income Taxes | 101\nNote 16 | Other Comprehensive Income | 106\nNote 17 | Fair Value Measurements | 109\nNote 18 | Significant Operating and Nonoperating Items | 114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Net Operating Revenues | $47,941 | $47,061 | $45,754"
+     },
+     {
+      "chunk_id": "KO-FY2025#0265",
+      "quote": "114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB ID: 42 ) | 121\nReport of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting | 123\n60\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311\nInterest income | 786 | 988 | 907\nInterest expense | 1,654 | 1,656 | 1,527\nEquity income (loss) \u2014 net | 2,031 | 1,770 | 1,691\nOther income (loss) \u2014 net | 1,073 | 1,992 | 570\nIncome Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | (",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Net Operating Revenues | $47,941 | $47,061 | $45,754"
+     },
+     {
+      "chunk_id": "KO-FY2025#0266",
+      "quote": "Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | ( 11 )\nNet Income Attributable to Shareowners of The Coca-Cola Company | $13,107 | $10,631 | $10,714\nBasic Net Income Per Share 1 | $3.05 | $2.47 | $2.48\nDiluted Net Income Per Share 1 | $3.04 | $2.46 | $2.47\nAverage Shares Outstanding \u2014 Basic | 4,303 | 4,309 | 4,323\nEffect of dilutive securities | 10 | 11 | 16\nAverage Shares Outstanding \u2014 Diluted | 4,313 | 4,320 | 4,339\n1 Calculated based on net income attributable to shareowners of The Coca-Cola Company.\nRefer to Notes to Consolidated Financial Statements.\n61\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n(In millions)\nYear Ended December 31, | 2025 | 2024 | 2023\nConsolidated Net Income | $13,137 | $10,649 | $10,703\nOther Comprehensive Income:\nNet foreign currency translation adjustments | 2,868 | ( 2,893 ) | 736\nNet gains (losses) on derivatives | ( 360 ) | 270 | ( 178 )\nNet change in unrealized gains (losses) on available-for-sale debt securities | 38 | ( 63 ) | 24\nNet change in pension and other",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Net Operating Revenues | $47,941 | $47,061 | $45,754"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "KO-FY2025:operating_income",
+    "question": "What was Coca-Cola's operating income for fiscal year 2025?",
+    "expected_usd": 13762000000.0,
+    "answer": "$13,762,000,000 [KO-FY2025#0264, KO-FY2025#0265, KO-FY2025#0266]",
+    "cited": [
+     "KO-FY2025#0264",
+     "KO-FY2025#0265",
+     "KO-FY2025#0266"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "KO-FY2025#0264",
+      "quote": "| 62\nConsolidated Balance Sheets | 63\nConsolidated Statements of Cash Flows | 64\nConsolidated Statements of Shareowners\u2019 Equity | 65\nNotes to Consolidated Financial Statements | 66\nNote 1 | Business and Summary of Significant Accounting Policies | 66\nNote 2 | Acquisitions and Divestitures | 73\nNote 3 | Net Operating Revenues | 74\nNote 4 | Investments | 76\nNote 5 | Hedging Transactions and Derivative Financial Instruments | 78\nNote 6 | Equity Method Investments | 85\nNote 7 | Goodwill | 86\nNote 8 | Accounts Payable and Accrued Expenses | 86\nNote 9 | Supply Chain Finance Program | 87\nNote 10 | Leases | 87\nNote 11 | Debt and Borrowing Arrangements | 88\nNote 12 | Commitments and Contingencies | 89\nNote 13 | Stock-Based Compensation Plans | 92\nNote 14 | Pension and Other Postretirement Benefit Plans | 95\nNote 15 | Income Taxes | 101\nNote 16 | Other Comprehensive Income | 106\nNote 17 | Fair Value Measurements | 109\nNote 18 | Significant Operating and Nonoperating Items | 114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     },
+     {
+      "chunk_id": "KO-FY2025#0265",
+      "quote": "114\nNote 19 | Restructuring | 115\nNote 20 | Operating Segments | 116\nNote 21 | Net Change in Operating Assets and Liabilities | 118\nReport of Management | 119\nReport of Independent Registered Public Accounting Fir m (PCAOB ID: 42 ) | 121\nReport of Independent Registered Public Accounting Firm on Internal Control Over Financial Reporting | 123\n60\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311\nInterest income | 786 | 988 | 907\nInterest expense | 1,654 | 1,656 | 1,527\nEquity income (loss) \u2014 net | 2,031 | 1,770 | 1,691\nOther income (loss) \u2014 net | 1,073 | 1,992 | 570\nIncome Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | (",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     },
+     {
+      "chunk_id": "KO-FY2025#0266",
+      "quote": "Before Income Taxes | 15,998 | 13,086 | 12,952\nIncome taxes | 2,861 | 2,437 | 2,249\nConsolidated Net Income | 13,137 | 10,649 | 10,703\nLess: Net income (loss) attributable to noncontrolling interests | 30 | 18 | ( 11 )\nNet Income Attributable to Shareowners of The Coca-Cola Company | $13,107 | $10,631 | $10,714\nBasic Net Income Per Share 1 | $3.05 | $2.47 | $2.48\nDiluted Net Income Per Share 1 | $3.04 | $2.46 | $2.47\nAverage Shares Outstanding \u2014 Basic | 4,303 | 4,309 | 4,323\nEffect of dilutive securities | 10 | 11 | 16\nAverage Shares Outstanding \u2014 Diluted | 4,313 | 4,320 | 4,339\n1 Calculated based on net income attributable to shareowners of The Coca-Cola Company.\nRefer to Notes to Consolidated Financial Statements.\n61\nTHE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF COMPREHENSIVE INCOME\n(In millions)\nYear Ended December 31, | 2025 | 2024 | 2023\nConsolidated Net Income | $13,137 | $10,649 | $10,703\nOther Comprehensive Income:\nNet foreign currency translation adjustments | 2,868 | ( 2,893 ) | 736\nNet gains (losses) on derivatives | ( 360 ) | 270 | ( 178 )\nNet change in unrealized gains (losses) on available-for-sale debt securities | 38 | ( 63 ) | 24\nNet change in pension and other",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Year Ended December 31, | 2025 | 2024 | 2023",
+      "unit_caption": "(In millions except per share data)",
+      "metric_row": "Operating Income | 13,762 | 9,992 | 11,311"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "MSFT-FY2025:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2025?",
+    "expected_usd": 281724000000.0,
+    "answer": "$281,724,000,000 [MSFT-FY2025#0122, MSFT-FY2025#0123, MSFT-FY2025#0124]",
+    "cited": [
+     "MSFT-FY2025#0122",
+     "MSFT-FY2025#0123",
+     "MSFT-FY2025#0124"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "MSFT-FY2025#0122",
+      "quote": "LinkedIn revenue growth | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions\nDynamics 365 revenue growth | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate\nAzure and other cloud services revenue growth | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services\n37\nPART II\nItem 7\nMore Personal Computing\nMetrics related to our More Personal Computing segment assess the performance of our key consumer businesses.\nWindows OEM and Devices revenue growth | Revenue from sales of Windows Pro and non-Pro licenses sold through the OEM channel and sales of first-party Devices, including Surface and PC accessories\nXbox content and services revenue growth | Revenue from Xbox content and services, comprising first- and third-party content (including games and in-game content), Xbox Game Pass and other subscriptions, Xbox Cloud Gaming, advertising, and other cloud services\nSearch and news advertising revenue (ex TAC) growth | Revenue from search and news advertising excluding traffic acquisition costs (\u201cTAC\u201d) paid to Bing Ads network publishers and news partners\nSUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 |",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "metric_row": "Revenue | $281,724 | $245,122 | 15%"
+     },
+     {
+      "chunk_id": "MSFT-FY2025#0123",
+      "quote": "and news advertising excluding traffic acquisition costs (\u201cTAC\u201d) paid to Bing Ads network publishers and news partners\nSUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 | $245,122 | 15%\nGross margin | 193,893 | 171,008 | 13%\nOperating income | 128,528 | 109,433 | 17%\nNet income | 101,832 | 88,136 | 16%\nDiluted earnings per share | 13.64 | 11.80 | 16%\nFiscal Year 2025 Compared with Fiscal Year 2024\nRevenue increased $36.6 billion or 15% with growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue increased driven by Gaming and Search and news advertising.\nCost of revenue increased $13.7 billion or 19% driven by growth in Microsoft Cloud.\nGross margin increased $22.9 billion or 13% with growth across each of our segments.\n\u2022\nGross margin percentage decreased slightly driven by Intelligent Cloud, offset in part by More Personal Computing.\n\u2022\nMicrosoft Cloud gross margin percentage decreased to 69% driven by the impact of scaling our AI infrastructure, offset in part by efficiency gains in Azure.\nOperating expenses increased $3.8 billion or 6% driven by investments in cloud and AI engineering and Gaming, including the",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "metric_row": "Revenue | $281,724 | $245,122 | 15%"
+     },
+     {
+      "chunk_id": "MSFT-FY2025#0124",
+      "quote": "percentage decreased to 69% driven by the impact of scaling our AI infrastructure, offset in part by efficiency gains in Azure.\nOperating expenses increased $3.8 billion or 6% driven by investments in cloud and AI engineering and Gaming, including the impact of the Activision Blizzard acquisition.\nOperating income increased $19.1 billion or 17% with growth across each of our segments.\n38\nPART II\nItem 7\nSEGMENT RESULTS OF OPERATIONS\n(In millions, except percentages) | 2025 | 2024 | Percentage Change\nProductivity and Business Processes\nRevenue | $120,810 | $106,820 | 13%\nCost of revenue | 22,422 | 19,611 | 14%\nOperating expenses | 28,615 | 27,548 | 4%\nOperating Income | $69,773 | $59,661 | 17%\nIntelligent Cloud\nRevenue | $106,265 | $87,464 | 21%\nCost of revenue | 40,171 | 29,611 | 36%\nOperating expenses | 21,505 | 20,040 | 7%\nOperating Income | $44,589 | $37,813 | 18%\nMore Personal Computing\nRevenue | $54,649 | $50,838 | 7%\nCost of revenue | 25,238 | 24,892 | 1%\nOperating expenses | 15,245 | 13,987 | 9%\nOperating Income | $14,166 | $11,959 | 18%\nTotal\nRevenue | $281,724 | $245,122 | 15%\nCost of revenue | 87,831 | 74,114 | 19%\nOperating expenses | 65,365 | 61,575 | 6%\nOperating Income | $128,528 | $109,433 | 17%\nReportable Segments",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "metric_row": "Revenue | $281,724 | $245,122 | 15%"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "MSFT-FY2025:net_income",
+    "question": "What was Microsoft's net income for fiscal year 2025?",
+    "expected_usd": 101832000000.0,
+    "answer": "$101,832,000,000 [MSFT-FY2025#0122, MSFT-FY2025#0123, MSFT-FY2025#0124]",
+    "cited": [
+     "MSFT-FY2025#0122",
+     "MSFT-FY2025#0123",
+     "MSFT-FY2025#0124"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "MSFT-FY2025#0122",
+      "quote": "LinkedIn revenue growth | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions\nDynamics 365 revenue growth | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate\nAzure and other cloud services revenue growth | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Nuance Healthcare cloud services, virtual desktop offerings, and other cloud services\n37\nPART II\nItem 7\nMore Personal Computing\nMetrics related to our More Personal Computing segment assess the performance of our key consumer businesses.\nWindows OEM and Devices revenue growth | Revenue from sales of Windows Pro and non-Pro licenses sold through the OEM channel and sales of first-party Devices, including Surface and PC accessories\nXbox content and services revenue growth | Revenue from Xbox content and services, comprising first- and third-party content (including games and in-game content), Xbox Game Pass and other subscriptions, Xbox Cloud Gaming, advertising, and other cloud services\nSearch and news advertising revenue (ex TAC) growth | Revenue from search and news advertising excluding traffic acquisition costs (\u201cTAC\u201d) paid to Bing Ads network publishers and news partners\nSUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 |",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "metric_row": "Net income | 101,832 | 88,136 | 16%"
+     },
+     {
+      "chunk_id": "MSFT-FY2025#0123",
+      "quote": "and news advertising excluding traffic acquisition costs (\u201cTAC\u201d) paid to Bing Ads network publishers and news partners\nSUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 | $245,122 | 15%\nGross margin | 193,893 | 171,008 | 13%\nOperating income | 128,528 | 109,433 | 17%\nNet income | 101,832 | 88,136 | 16%\nDiluted earnings per share | 13.64 | 11.80 | 16%\nFiscal Year 2025 Compared with Fiscal Year 2024\nRevenue increased $36.6 billion or 15% with growth across each of our segments. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue increased driven by Gaming and Search and news advertising.\nCost of revenue increased $13.7 billion or 19% driven by growth in Microsoft Cloud.\nGross margin increased $22.9 billion or 13% with growth across each of our segments.\n\u2022\nGross margin percentage decreased slightly driven by Intelligent Cloud, offset in part by More Personal Computing.\n\u2022\nMicrosoft Cloud gross margin percentage decreased to 69% driven by the impact of scaling our AI infrastructure, offset in part by efficiency gains in Azure.\nOperating expenses increased $3.8 billion or 6% driven by investments in cloud and AI engineering and Gaming, including the",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "metric_row": "Net income | 101,832 | 88,136 | 16%"
+     },
+     {
+      "chunk_id": "MSFT-FY2025#0124",
+      "quote": "percentage decreased to 69% driven by the impact of scaling our AI infrastructure, offset in part by efficiency gains in Azure.\nOperating expenses increased $3.8 billion or 6% driven by investments in cloud and AI engineering and Gaming, including the impact of the Activision Blizzard acquisition.\nOperating income increased $19.1 billion or 17% with growth across each of our segments.\n38\nPART II\nItem 7\nSEGMENT RESULTS OF OPERATIONS\n(In millions, except percentages) | 2025 | 2024 | Percentage Change\nProductivity and Business Processes\nRevenue | $120,810 | $106,820 | 13%\nCost of revenue | 22,422 | 19,611 | 14%\nOperating expenses | 28,615 | 27,548 | 4%\nOperating Income | $69,773 | $59,661 | 17%\nIntelligent Cloud\nRevenue | $106,265 | $87,464 | 21%\nCost of revenue | 40,171 | 29,611 | 36%\nOperating expenses | 21,505 | 20,040 | 7%\nOperating Income | $44,589 | $37,813 | 18%\nMore Personal Computing\nRevenue | $54,649 | $50,838 | 7%\nCost of revenue | 25,238 | 24,892 | 1%\nOperating expenses | 15,245 | 13,987 | 9%\nOperating Income | $14,166 | $11,959 | 18%\nTotal\nRevenue | $281,724 | $245,122 | 15%\nCost of revenue | 87,831 | 74,114 | 19%\nOperating expenses | 65,365 | 61,575 | 6%\nOperating Income | $128,528 | $109,433 | 17%\nReportable Segments",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change",
+      "metric_row": "Net income | 101,832 | 88,136 | 16%"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "MSFT-FY2026:revenue",
+    "question": "What was Microsoft's total revenue for fiscal year 2026?",
+    "expected_usd": 331839000000.0,
+    "answer": "$331,839,000,000 [MSFT-FY2026#0122, MSFT-FY2026#0123, MSFT-FY2026#0124]",
+    "cited": [
+     "MSFT-FY2026#0122",
+     "MSFT-FY2026#0123",
+     "MSFT-FY2026#0124"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "MSFT-FY2026#0122",
+      "quote": "and Intelligent Cloud segments assess the health of our core businesses within these segments. The metrics primarily reflect growth across our cloud services.\nMicrosoft 365 Commercial cloud revenue growth | Revenue from Microsoft 365 Commercial subscriptions, comprising Microsoft 365 Commercial, Enterprise Mobility + Security, the cloud portion of Windows Commercial, the per-user portion of Power BI, Exchange, SharePoint, Microsoft Teams, Microsoft 365 Security and Compliance, and Microsoft 365 Copilot\nMicrosoft 365 Commercial seat growth | The number of Microsoft 365 Commercial seats at end of period where seats are paid users covered by a Microsoft 365 Commercial subscription\nMicrosoft 365 Consumer cloud revenue growth | Revenue from Microsoft 365 Consumer subscriptions and other consumer services\nLinkedIn revenue growth | Revenue from LinkedIn, including Talent Solutions, Marketing Solutions, Premium Subscriptions, and Sales Solutions\nDynamics 365 revenue growth | Revenue from Dynamics 365, including a set of intelligent, cloud-based applications across ERP, CRM, Power Apps, and Power Automate\nAzure and other cloud services revenue growth | Revenue from Azure and other cloud services, including cloud and AI consumption-based services, GitHub cloud services, Health and Life Sciences cloud services (formerly Nuance Healthcare cloud services), virtual desktop offerings, and other cloud services\n36\nPART II\nItem 7\nMore Personal Computing\nMetrics related to our More Personal Computing segment assess the performance of our key",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change",
+      "metric_row": "Revenue | $331,839 | $281,724 | 18%"
+     },
+     {
+      "chunk_id": "MSFT-FY2026#0123",
+      "quote": "Health and Life Sciences cloud services (formerly Nuance Healthcare cloud services), virtual desktop offerings, and other cloud services\n36\nPART II\nItem 7\nMore Personal Computing\nMetrics related to our More Personal Computing segment assess the performance of our key consumer businesses.\nWindows OEM and Devices revenue growth | Revenue from sales of Windows Pro and non-Pro licenses sold through the OEM channel and sales of first-party Devices, including Surface and PC accessories\nXBOX content and services revenue growth | Revenue from XBOX content and services, comprising first- and third-party content (including games and in-game content), XBOX Game Pass and other subscriptions, XBOX Cloud Gaming, advertising, and other cloud services\nSearch advertising revenue (ex TAC) growth | Revenue from search advertising excluding traffic acquisition costs (\u201cTAC\u201d) paid to Bing Ads network publishers and content partners\nSUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change\nRevenue | $331,839 | $281,724 | 18%\nGross margin | 225,465 | 193,893 | 16%\nOperating income | 155,237 | 128,528 | 21%\nNet income | 133,749 | 101,832 | 31%\nDiluted earnings per share | 17.95 | 13.64 | 32%\nAdjusted net income (non-GAAP) | 128,786 | 105,452 | 22%\nAdjusted diluted earnings per share (non-GAAP) | 17.28 | 14.13 | 22%\nAdjusted net income",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change",
+      "metric_row": "Revenue | $331,839 | $281,724 | 18%"
+     },
+     {
+      "chunk_id": "MSFT-FY2026#0124",
+      "quote": "133,749 | 101,832 | 31%\nDiluted earnings per share | 17.95 | 13.64 | 32%\nAdjusted net income (non-GAAP) | 128,786 | 105,452 | 22%\nAdjusted diluted earnings per share (non-GAAP) | 17.28 | 14.13 | 22%\nAdjusted net income and adjusted diluted earnings per share (\u201cEPS\u201d) are non-GAAP financial measures. These non-GAAP financial measures exclude net gains and losses from investments in OpenAI. Refer to the Non-GAAP Financial Measures section below for a reconciliation of our financial results reported in accordance with GAAP to non-GAAP financial results.\nFiscal Year 2026 Compared with Fiscal Year 2025\nRevenue increased $50.1 billion or 18% driven by growth in Microsoft Cloud. Intelligent Cloud revenue increased driven by Azure. Productivity and Business Processes revenue increased driven by Microsoft 365 Commercial cloud. More Personal Computing revenue decreased driven by XBOX (formerly Gaming), offset in part by growth in Search advertising.\nCost of revenue increased $18.5 billion or 21% driven by growth in Microsoft Cloud.\nGross margin increased $31.6 billion or 16% with growth across each of our segments.\n\u2022\nGross margin percentage decreased slightly driven by continued investments in AI infrastructure and growing AI product usage, offset in part by efficiency gains across the Microsoft Cloud.\n\u2022\nMicrosoft Cloud gross margin percentage decreased to 66% driven by continued investments in AI infrastructure and growing AI",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change",
+      "unit_caption": "(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change",
+      "metric_row": "Revenue | $331,839 | $281,724 | 18%"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "MSFT-FY2026:rd_expense",
+    "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+    "expected_usd": 35562000000.0,
+    "answer": "$35,562 million [MSFT-FY2026#0131]",
+    "cited": [
+     "MSFT-FY2026#0131"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "NVDA-FY2025:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2025?",
+    "expected_usd": 130497000000.0,
+    "answer": "$130,497,000,000 [NVDA-FY2026#0201, NVDA-FY2026#0202, NVDA-FY2026#0203]",
+    "cited": [
+     "NVDA-FY2026#0201",
+     "NVDA-FY2026#0202",
+     "NVDA-FY2026#0203"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "NVDA-FY2026#0201",
+      "quote": "related to future demand and market conditions. This in turn led to significant auditor judgment, subjectivity, and effort in performing procedures and evaluating management\u2019s assumptions related to future demand and market conditions.\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the consolidated financial statements. These procedures included testing the effectiveness of controls relating to management\u2019s provisions for excess or obsolete inventories and excess product purchase commitments, including controls over management\u2019s assumptions related to future demand and market conditions. These procedures also included, among others, testing management\u2019s process for developing the provisions for excess or obsolete inventories and excess product purchase commitments; evaluating the appropriateness of management\u2019s approach; testing the completeness and accuracy of underlying data used in the approach; and evaluating the reasonableness of management\u2019s assumptions related to future demand and market conditions. Evaluating management\u2019s assumptions related to future demand and market conditions involved evaluating whether the assumptions used by management were reasonable considering (i) current and past results, including historical product life cycle, (ii) the consistency with external market and industry data, and (iii) changes in technology.\n/s/PricewaterhouseCoopers LLP\nSan Jose, California\nFebruary 25, 2026\nWe have served as the Company\u2019s auditor since 2004.\n50\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024",
+      "unit_caption": "(In millions, except per share data)",
+      "metric_row": "Revenue | $215,938 | $130,497 | $60,922"
+     },
+     {
+      "chunk_id": "NVDA-FY2026#0202",
+      "quote": "and industry data, and (iii) changes in technology.\n/s/PricewaterhouseCoopers LLP\nSan Jose, California\nFebruary 25, 2026\nWe have served as the Company\u2019s auditor since 2004.\n50\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except per share data)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nRevenue | $215,938 | $130,497 | $60,922\nCost of revenue | 62,475 | 32,639 | 16,621\nGross profit | 153,463 | 97,858 | 44,301\nOperating expenses\nResearch and development | 18,497 | 12,914 | 8,675\nSales, general and administrative | 4,579 | 3,491 | 2,654\nTotal operating expenses | 23,076 | 16,405 | 11,329\nOperating income | 130,387 | 81,453 | 32,972\nInterest income | 2,300 | 1,786 | 866\nInterest expense | ( 259 ) | ( 247 ) | ( 257 )\nOther income, net | 9,022 | 1,034 | 237\nTotal other income, net | 11,063 | 2,573 | 846\nIncome before income tax | 141,450 | 84,026 | 33,818\nIncome tax expense | 21,383 | 11,146 | 4,058\nNet income | $120,067 | $72,880 | $29,760\nNet income per share:\nBasic | $4.93 | $2.97 | $1.21\nDiluted | $4.90 | $2.94 | $1.19\nWeighted average shares used in per share computation:\nBasic | 24,359 | 24,555 | 24,690\nDiluted",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024",
+      "unit_caption": "(In millions, except per share data)",
+      "metric_row": "Revenue | $215,938 | $130,497 | $60,922"
+     },
+     {
+      "chunk_id": "NVDA-FY2026#0203",
+      "quote": "| $120,067 | $72,880 | $29,760\nNet income per share:\nBasic | $4.93 | $2.97 | $1.21\nDiluted | $4.90 | $2.94 | $1.19\nWeighted average shares used in per share computation:\nBasic | 24,359 | 24,555 | 24,690\nDiluted | 24,514 | 24,804 | 24,940\nSee accompanying Notes to the Consolidated Financial Statements.\n51\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Statements of Comprehensive Income\n(In millions)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nNet income | $120,067 | $72,880 | $29,760\nOther comprehensive income, net of tax\nAvailable-for-sale securities:\nNet change in unrealized gain | 107 | 1 | 80\nCash flow hedges:\nNet change in unrealized gain (loss) | 43 | \u2014 | ( 10 )\nOther comprehensive income, net of tax | 150 | 1 | 70\nTotal comprehensive income | $120,217 | $72,881 | $29,830\nSee accompanying Notes to the Consolidated Financial Statements.\n52\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Balance Sheets\n(In millions, except par value)\nJan 25, 2026 | Jan 26, 2025\nAssets\nCurrent assets:\nCash and cash equivalents | $10,605 | $8,589\nMarketable securities | 51,951 | 34,621\nAccounts receivable, net | 38,466 | 23,065\nInventories | 21,403 | 10,080\nPrepaid expenses and other current assets | 3,180 | 3,771\nTotal current assets",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024",
+      "unit_caption": "(In millions, except per share data)",
+      "metric_row": "Revenue | $215,938 | $130,497 | $60,922"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "NVDA-FY2025:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2025?",
+    "expected_usd": 12914000000.0,
+    "answer": "$12,914 million [NVDA-FY2026#0172]",
+    "cited": [
+     "NVDA-FY2026#0172"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   },
+   {
+    "id": "NVDA-FY2026:revenue",
+    "question": "What was NVIDIA's total revenue for fiscal year 2026?",
+    "expected_usd": 215938000000.0,
+    "answer": "$215,938,000,000 [NVDA-FY2026#0201, NVDA-FY2026#0202, NVDA-FY2026#0203]",
+    "cited": [
+     "NVDA-FY2026#0201",
+     "NVDA-FY2026#0202",
+     "NVDA-FY2026#0203"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "source-extracted",
+    "source_evidence": [
+     {
+      "chunk_id": "NVDA-FY2026#0201",
+      "quote": "related to future demand and market conditions. This in turn led to significant auditor judgment, subjectivity, and effort in performing procedures and evaluating management\u2019s assumptions related to future demand and market conditions.\nAddressing the matter involved performing procedures and evaluating audit evidence in connection with forming our overall opinion on the consolidated financial statements. These procedures included testing the effectiveness of controls relating to management\u2019s provisions for excess or obsolete inventories and excess product purchase commitments, including controls over management\u2019s assumptions related to future demand and market conditions. These procedures also included, among others, testing management\u2019s process for developing the provisions for excess or obsolete inventories and excess product purchase commitments; evaluating the appropriateness of management\u2019s approach; testing the completeness and accuracy of underlying data used in the approach; and evaluating the reasonableness of management\u2019s assumptions related to future demand and market conditions. Evaluating management\u2019s assumptions related to future demand and market conditions involved evaluating whether the assumptions used by management were reasonable considering (i) current and past results, including historical product life cycle, (ii) the consistency with external market and industry data, and (iii) changes in technology.\n/s/PricewaterhouseCoopers LLP\nSan Jose, California\nFebruary 25, 2026\nWe have served as the Company\u2019s auditor since 2004.\n50\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024",
+      "unit_caption": "(In millions, except per share data)",
+      "metric_row": "Revenue | $215,938 | $130,497 | $60,922"
+     },
+     {
+      "chunk_id": "NVDA-FY2026#0202",
+      "quote": "and industry data, and (iii) changes in technology.\n/s/PricewaterhouseCoopers LLP\nSan Jose, California\nFebruary 25, 2026\nWe have served as the Company\u2019s auditor since 2004.\n50\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except per share data)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nRevenue | $215,938 | $130,497 | $60,922\nCost of revenue | 62,475 | 32,639 | 16,621\nGross profit | 153,463 | 97,858 | 44,301\nOperating expenses\nResearch and development | 18,497 | 12,914 | 8,675\nSales, general and administrative | 4,579 | 3,491 | 2,654\nTotal operating expenses | 23,076 | 16,405 | 11,329\nOperating income | 130,387 | 81,453 | 32,972\nInterest income | 2,300 | 1,786 | 866\nInterest expense | ( 259 ) | ( 247 ) | ( 257 )\nOther income, net | 9,022 | 1,034 | 237\nTotal other income, net | 11,063 | 2,573 | 846\nIncome before income tax | 141,450 | 84,026 | 33,818\nIncome tax expense | 21,383 | 11,146 | 4,058\nNet income | $120,067 | $72,880 | $29,760\nNet income per share:\nBasic | $4.93 | $2.97 | $1.21\nDiluted | $4.90 | $2.94 | $1.19\nWeighted average shares used in per share computation:\nBasic | 24,359 | 24,555 | 24,690\nDiluted",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024",
+      "unit_caption": "(In millions, except per share data)",
+      "metric_row": "Revenue | $215,938 | $130,497 | $60,922"
+     },
+     {
+      "chunk_id": "NVDA-FY2026#0203",
+      "quote": "| $120,067 | $72,880 | $29,760\nNet income per share:\nBasic | $4.93 | $2.97 | $1.21\nDiluted | $4.90 | $2.94 | $1.19\nWeighted average shares used in per share computation:\nBasic | 24,359 | 24,555 | 24,690\nDiluted | 24,514 | 24,804 | 24,940\nSee accompanying Notes to the Consolidated Financial Statements.\n51\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Statements of Comprehensive Income\n(In millions)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nNet income | $120,067 | $72,880 | $29,760\nOther comprehensive income, net of tax\nAvailable-for-sale securities:\nNet change in unrealized gain | 107 | 1 | 80\nCash flow hedges:\nNet change in unrealized gain (loss) | 43 | \u2014 | ( 10 )\nOther comprehensive income, net of tax | 150 | 1 | 70\nTotal comprehensive income | $120,217 | $72,881 | $29,830\nSee accompanying Notes to the Consolidated Financial Statements.\n52\nTable of Contents\nNVIDIA Corporation and Subsidiaries\nConsolidated Balance Sheets\n(In millions, except par value)\nJan 25, 2026 | Jan 26, 2025\nAssets\nCurrent assets:\nCash and cash equivalents | $10,605 | $8,589\nMarketable securities | 51,951 | 34,621\nAccounts receivable, net | 38,466 | 23,065\nInventories | 21,403 | 10,080\nPrepaid expenses and other current assets | 3,180 | 3,771\nTotal current assets",
+      "source_kind": "table",
+      "adjacent_context_supplied": true,
+      "period_header": "Jan 25, 2026 | Jan 26, 2025 | Jan 28, 2024",
+      "unit_caption": "(In millions, except per share data)",
+      "metric_row": "Revenue | $215,938 | $130,497 | $60,922"
+     }
+    ],
+    "grounding_note": "explicit metric, period, unit and sign"
+   },
+   {
+    "id": "NVDA-FY2026:rd_expense",
+    "question": "How much did NVIDIA spend on research and development in fiscal year 2026?",
+    "expected_usd": 18497000000.0,
+    "answer": "$18,497 million [NVDA-FY2026#0172]",
+    "cited": [
+     "NVDA-FY2026#0172"
+    ],
+    "correct": true,
+    "abstained": false,
+    "cited_gold": true,
+    "cited_gold_and_correct": true,
+    "answer_method": "model-fallback",
+    "source_evidence": [],
+    "grounding_note": "unsupported source layout; model answer not source-verified"
+   }
+  ]
+ }
+}

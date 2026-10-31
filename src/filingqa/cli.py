@@ -5,6 +5,7 @@ from __future__ import annotations
 import argparse
 import sys
 import time
+from pathlib import Path
 
 from . import config
 
@@ -51,6 +52,15 @@ def cmd_ask(args) -> None:
     retriever = index.retriever(args.retriever)
     result = answer_question(args.question, index, retriever, make_generator(args.backend), args.k)
     print(result.text)
+    labels = {
+        "source-extracted": "Source-derived answer",
+        "source-abstained": "Insufficient supported source evidence",
+        "model-fallback": "Model fallback: not source-verified",
+        "model": "Model answer",
+    }
+    print(f"\n{labels[result.method]}")
+    if result.grounding_note:
+        print(result.grounding_note)
     print("\nSources:")
     for chunk in result.chunks:
         mark = "*" if chunk.id in result.cited else " "
@@ -68,6 +78,8 @@ def cmd_eval(args) -> None:
         e2e_limit=args.e2e_limit,
         backend=args.backend,
         qualitative=not args.no_qualitative,
+        reviewed_evidence=args.reviewed_evidence,
+        docs=args.output_dir,
     )
 
 
@@ -90,7 +102,7 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--chunking", choices=config.CHUNKINGS, default="section")
     s.add_argument("--retriever", choices=config.RETRIEVERS, default="hybrid")
     s.add_argument("--backend", choices=["ollama", "anthropic"], default="ollama")
-    s.add_argument("-k", type=int, default=6, help="chunks passed to the generator")
+    s.add_argument("-k", type=int, default=6, help="retrieval seeds (model prompts are capped at 6 chunks)")
     s.set_defaults(fn=cmd_ask)
 
     s = sub.add_parser("eval", help="retrieval metrics for every configuration (+ optional e2e)")
@@ -101,6 +113,21 @@ def main(argv: list[str] | None = None) -> None:
     s.add_argument("--e2e-limit", type=int, default=None, help="cap number of e2e questions")
     s.add_argument("--backend", choices=["ollama", "anthropic"], default="ollama")
     s.add_argument("--no-qualitative", action="store_true")
+    s.add_argument(
+        "--output-dir",
+        type=Path,
+        default=None,
+        help=(
+            "directory for evaluation outputs "
+            f"(default: new timestamped directory under {config.DATA_DIR / 'runs'})"
+        ),
+    )
+    s.add_argument(
+        "--reviewed-evidence",
+        type=Path,
+        default=None,
+        help="v1 reviewed quote manifest; evaluate only annotated questions",
+    )
     s.set_defaults(fn=cmd_eval)
 
     args = p.parse_args(argv)
@@ -108,8 +135,10 @@ def main(argv: list[str] | None = None) -> None:
         args.fn(args)
     except Exception as exc:  # user-facing failures: missing env var, Ollama down, ...
         from .edgar import MissingUserAgent
+        from .evaluate import EvaluationError
+        from .evidence import EvidenceError
 
-        if isinstance(exc, MissingUserAgent):
+        if isinstance(exc, (MissingUserAgent, EvidenceError, EvaluationError)):
             raise SystemExit(f"error: {exc}") from None
         raise
 

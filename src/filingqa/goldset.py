@@ -1,10 +1,11 @@
-"""Build a gold question set from XBRL companyfacts, with no human labelling.
+"""Build numeric questions and heuristic source candidates from XBRL facts.
 
 Every 10-K carries machine-readable facts (Revenues, NetIncomeLoss, Assets, ...) tagged with
 the filing's accession number and period. That gives us (question, exact answer) pairs for
 free. To score *retrieval* we also need the chunk that contains the answer: we render the
 value the way a filing would print it ("391,035" in millions, "$391.0 billion" in prose) and
-search the chunks for it. Chunks that contain the number are the gold chunks.
+search the chunks for it. These candidate labels do not verify the metric, period or units.
+Reviewed labels can be supplied separately through evidence.py.
 """
 
 from __future__ import annotations
@@ -106,10 +107,11 @@ def build_questions(
 
 
 def gold_chunk_ids(question: Question, chunks: list[Chunk]) -> list[str]:
-    """Chunks of the same company whose text contains the question's value.
+    """Heuristic candidate chunks of the same company containing the target magnitude.
 
     Any of the company's ingested filings counts: FY2025 figures legitimately appear as
-    comparatives in the FY2026 10-K, and a retriever that finds them has found the answer.
+    comparatives in the FY2026 10-K. The same number can also refer to another metric or
+    period, so these candidates must not be described as verified claim-level evidence.
     """
     return [
         c.id

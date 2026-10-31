@@ -1,0 +1,155 @@
+{
+  "all_gates_pass": true,
+  "unchanged_scorer_corpus_questions_and_labels": true,
+  "source_version": "source-grounded-usd-v11",
+  "runs": {
+    "candidate": {
+      "rows": {
+        "fixed + dense": {
+          "correct": 38,
+          "n": 64,
+          "cited_label": 32,
+          "correct_and_cited_label": 28,
+          "abstained": 4,
+          "citation_by_method": {
+            "model-fallback": {
+              "n": 54,
+              "cited_label": 22,
+              "correct_and_cited_label": 18,
+              "model_calls": 54,
+              "cited_label_rate": 0.4074074074074074,
+              "correct_and_cited_label_rate": 0.3333333333333333
+            },
+            "source-extracted": {
+              "n": 10,
+              "cited_label": 10,
+              "correct_and_cited_label": 10,
+              "model_calls": 0,
+              "cited_label_rate": 1.0,
+              "correct_and_cited_label_rate": 1.0
+            }
+          },
+          "methods": {
+            "model-fallback": 54,
+            "source-extracted": 10
+          },
+          "actual_model_calls": 54,
+          "threshold": 33,
+          "pass": true
+        },
+        "oracle (fixed)": {
+          "correct": 63,
+          "n": 64,
+          "cited_label": 62,
+          "correct_and_cited_label": 62,
+          "abstained": 0,
+          "citation_by_method": {
+            "model-fallback": {
+              "n": 29,
+              "cited_label": 27,
+              "correct_and_cited_label": 27,
+              "model_calls": 29,
+              "cited_label_rate": 0.9310344827586207,
+              "correct_and_cited_label_rate": 0.9310344827586207
+            },
+            "source-extracted": {
+              "n": 35,
+              "cited_label": 35,
+              "correct_and_cited_label": 35,
+              "model_calls": 0,
+              "cited_label_rate": 1.0,
+              "correct_and_cited_label_rate": 1.0
+            }
+          },
+          "methods": {
+            "model-fallback": 29,
+            "source-extracted": 35
+          },
+          "actual_model_calls": 29,
+          "threshold": 56,
+          "pass": true
+        }
+      },
+      "actual_model_calls": 83,
+      "certified_source_numeric_errors": 0,
+      "method_and_provenance_checks": "passed"
+    },
+    "reviewed": {
+      "rows": {
+        "fixed + dense": {
+          "correct": 16,
+          "n": 20,
+          "cited_label": 6,
+          "correct_and_cited_label": 6,
+          "abstained": 0,
+          "citation_by_method": {
+            "model-fallback": {
+              "n": 17,
+              "cited_label": 3,
+              "correct_and_cited_label": 3,
+              "model_calls": 17,
+              "cited_label_rate": 0.17647058823529413,
+              "correct_and_cited_label_rate": 0.17647058823529413
+            },
+            "source-extracted": {
+              "n": 3,
+              "cited_label": 3,
+              "correct_and_cited_label": 3,
+              "model_calls": 0,
+              "cited_label_rate": 1.0,
+              "correct_and_cited_label_rate": 1.0
+            }
+          },
+          "methods": {
+            "model-fallback": 17,
+            "source-extracted": 3
+          },
+          "actual_model_calls": 17
+        },
+        "oracle (fixed)": {
+          "correct": 20,
+          "n": 20,
+          "cited_label": 20,
+          "correct_and_cited_label": 20,
+          "abstained": 0,
+          "citation_by_method": {
+            "model-fallback": {
+              "n": 14,
+              "cited_label": 14,
+              "correct_and_cited_label": 14,
+              "model_calls": 14,
+              "cited_label_rate": 1.0,
+              "correct_and_cited_label_rate": 1.0
+            },
+            "source-extracted": {
+              "n": 6,
+              "cited_label": 6,
+              "correct_and_cited_label": 6,
+              "model_calls": 0,
+              "cited_label_rate": 1.0,
+              "correct_and_cited_label_rate": 1.0
+            }
+          },
+          "methods": {
+            "model-fallback": 14,
+            "source-extracted": 6
+          },
+          "actual_model_calls": 14
+        }
+      },
+      "actual_model_calls": 31,
+      "certified_source_numeric_errors": 0,
+      "method_and_provenance_checks": "passed"
+    }
+  },
+  "known_four_regressions_corrected": {
+    "KO-FY2024:operating_cash_flow": true,
+    "AAPL-FY2024:operating_income": true,
+    "JPM-FY2025:equity": true,
+    "MSFT-FY2026:equity": true
+  },
+  "reviewed_negative_sign_fixes": {
+    "JPM-FY2024:operating_cash_flow": true,
+    "JPM-FY2025:operating_cash_flow": true
+  }
+}

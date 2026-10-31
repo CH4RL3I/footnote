@@ -1,0 +1,872 @@
+{
+  "version": 1,
+  "scope": "Additional independent synthetic contracts for Claude inspection1 F1,F2,F3,F5,F6 and the frozen host monetary-boundary cases; original37 cases unchanged.",
+  "notes": [
+    "All new expected values are manually specified source meanings, independent of benchmark labels and runtime implementation.",
+    "For unambiguously used-in outflows, either source-derived negative or abstention is safe; positive source-certification is prohibited.",
+    "No test exclusions or old expectation edits."
+  ],
+  "host_cases_sha256": "9647e95285faa83407eb2394c6cbbe5f8aa537de8ce2945b59ef4a47e3ffb44a",
+  "cases": [
+    {
+      "name": "increase_question_not_total_revenue",
+      "finding": "F1",
+      "question": "How much did GLOBEX revenue increase in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "plural_changes_question_not_total_revenue",
+      "finding": "F1",
+      "question": "What were GLOBEX revenue changes in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "decrease_question_not_total_revenue",
+      "finding": "F1",
+      "question": "What was the decrease in GLOBEX revenue for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "decline_question_not_total_revenue",
+      "finding": "F1",
+      "question": "What was GLOBEX revenue decline in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "segment_question_not_company_total",
+      "finding": "F1",
+      "question": "What was GLOBEX Data Center revenue for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "product_question_not_company_total",
+      "finding": "F1",
+      "question": "What was GLOBEX Photon handset net sales for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "regional_question_not_company_total",
+      "finding": "F1",
+      "question": "What was GLOBEX Europe revenue for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "adjusted_question_not_reported_net_income",
+      "finding": "F1",
+      "question": "What was GLOBEX adjusted net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "excluding_question_not_reported_revenue",
+      "finding": "F1",
+      "question": "What was GLOBEX total revenue excluding cloud services for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "nci_question_not_parent_net_income",
+      "finding": "F1",
+      "question": "What was GLOBEX net income attributable to noncontrolling interests for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "nongaap_question_not_gaap_net_income",
+      "finding": "F1",
+      "question": "What was GLOBEX non-GAAP net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "guidance_question_not_historical_income",
+      "finding": "F1",
+      "question": "What was GLOBEX net income guidance for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nRevenue | $150 | $83\nNet income | $97 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": true
+    },
+    {
+      "name": "unsigned_cash_used_direct",
+      "finding": "F2",
+      "question": "What was GLOBEX net cash provided by operating activities in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net cash used in operating activities for fiscal year 2030 was $83 million.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false,
+      "allowed_values": [
+        null,
+        "-83000000"
+      ]
+    },
+    {
+      "name": "unsigned_cash_used_respectively",
+      "finding": "F2",
+      "question": "What was GLOBEX net cash provided by operating activities in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net cash used in operating activities for fiscal years 2031 and 2030 was $97 million and $83 million, respectively.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false,
+      "allowed_values": [
+        null,
+        "-83000000"
+      ]
+    },
+    {
+      "name": "unsigned_cash_used_table",
+      "finding": "F2",
+      "question": "What was GLOBEX net cash provided by operating activities in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED CASH FLOW STATEMENTS\n(In millions)\n2031 | 2030\nNet cash used in operating activities | $97 | $83",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false,
+      "allowed_values": [
+        null,
+        "-83000000"
+      ]
+    },
+    {
+      "name": "explicit_negative_cash_used_not_double_negated",
+      "finding": "F2",
+      "question": "What was GLOBEX net cash provided by operating activities in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net cash used in operating activities for fiscal year 2030 was -$83 million.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false,
+      "allowed_values": [
+        null,
+        "-83000000"
+      ]
+    },
+    {
+      "name": "accounting_negative_cash_used_not_double_negated",
+      "finding": "F2",
+      "question": "What was GLOBEX net cash provided by operating activities in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net cash used in operating activities for fiscal year 2030 was $(83) million.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false,
+      "allowed_values": [
+        null,
+        "-83000000"
+      ]
+    },
+    {
+      "name": "mixed_provided_used_label_obeys_negative_cell",
+      "finding": "F2",
+      "question": "What was GLOBEX net cash provided by operating activities in fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED CASH FLOW STATEMENTS\n(In millions)\n2031 | 2030\nNet cash provided by/ (used in)\nOperating activities | $97 | $(83)",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "-83000000",
+      "no_intent": false
+    },
+    {
+      "name": "down_delta_not_absolute_income",
+      "finding": "F3",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal year 2030 was down $83 million from the prior year.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "excluding_impairment_not_absolute_income",
+      "finding": "F3",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income in fiscal 2030, excluding a $83 million impairment, remained positive.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "segment_qualifier_between_metric_and_period",
+      "finding": "F3",
+      "question": "What was GLOBEX operating income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Operating income for our Europe segment in fiscal 2030 was $83 million.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "subsidiary_qualifier_between_metric_and_period",
+      "finding": "F3",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for the wholly owned subsidiary in fiscal 2030 was $83 million.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "impact_amount_not_income",
+      "finding": "F3",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal year 2030 was affected by a $83 million charge.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "reduced_by_amount_not_income",
+      "finding": "F3",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal year 2030 was reduced by $83 million compared with the prior year.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "segment_qualifier_in_respectively_clause",
+      "finding": "F3",
+      "question": "What was GLOBEX operating income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Operating income for our Europe segment for fiscal years 2031 and 2030 was $97 million and $83 million, respectively.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "plain_net_income_not_common_holder_income",
+      "finding": "F5",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nNet income | $97 | $83\nPreferred dividends | $11 | $12\nNet income attributable to common stockholders | $86 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "83000000",
+      "no_intent": false
+    },
+    {
+      "name": "common_holder_only_not_total_net_income",
+      "finding": "F5",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nNet income attributable to common stockholders | $86 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "named_common_holder_income_still_not_total",
+      "finding": "F5",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED STATEMENTS OF INCOME\n(In millions)\n2031 | 2030\nNet income | $97 | $83\nNet income attributable to common stockholders of GLOBEX | $86 | $71",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "83000000",
+      "no_intent": false
+    },
+    {
+      "name": "plain_equity_not_common_holder_equity",
+      "finding": "F5",
+      "question": "What was GLOBEX total stockholders' equity at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(In millions)\n2031 | 2030\nTotal stockholders equity | $970 | $830\nEquity attributable to common stockholders | $860 | $710",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "830000000",
+      "no_intent": false
+    },
+    {
+      "name": "common_holder_only_not_total_equity",
+      "finding": "F5",
+      "question": "What was GLOBEX total stockholders' equity at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(In millions)\n2031 | 2030\nEquity attributable to common stockholders | $860 | $710",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "shares_first_dollar_scale_controls_money",
+      "finding": "F6",
+      "question": "What were GLOBEX total assets at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(Shares in thousands, dollars in millions)\n2031 | 2030\nTotal assets | $7,412 | $6,150",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "6150000000",
+      "no_intent": false
+    },
+    {
+      "name": "dollars_first_share_scale_does_not_override",
+      "finding": "F6",
+      "question": "What were GLOBEX total assets at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(Dollars in millions, shares in thousands)\n2031 | 2030\nTotal assets | $7,412 | $6,150",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "6150000000",
+      "no_intent": false
+    },
+    {
+      "name": "plain_money_caption_except_share_scale",
+      "finding": "F6",
+      "question": "What were GLOBEX total assets at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(In millions, except shares in thousands)\n2031 | 2030\nTotal assets | $7,412 | $6,150",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "6150000000",
+      "no_intent": false
+    },
+    {
+      "name": "shares_caption_alone_not_dollar_scale",
+      "finding": "F6",
+      "question": "What were GLOBEX total assets at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(Shares in thousands)\n2031 | 2030\nTotal assets | $7,412 | $6,150",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "physical_units_caption_not_dollar_scale",
+      "finding": "F6",
+      "question": "What were GLOBEX total assets at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(Measured in millions of units)\n2031 | 2030\nTotal assets | $7,412 | $6,150",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "employee_caption_not_dollar_scale",
+      "finding": "F6",
+      "question": "What were GLOBEX total assets at the end of fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "CONSOLIDATED BALANCE SHEETS\n(Employees in thousands)\n2031 | 2030\nTotal assets | $7,412 | $6,150",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "host_coded_dollar_direct",
+      "finding": "host-monetary-boundary",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal year 2030 was C$83 million.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "host_hidden_minus_direct",
+      "finding": "host-monetary-boundary",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal year 2030 was -**$83 million**.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "host_coded_dollar_respectively",
+      "finding": "host-monetary-boundary",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal years 2031 and 2030 was $97 million and C$83 million, respectively.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "host_hidden_minus_respectively",
+      "finding": "host-monetary-boundary",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal years 2031 and 2030 was $97 million and -**$83 million**, respectively.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "host_coded_dollar_suffix",
+      "finding": "host-monetary-boundary",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal year 2030 was $83 million C$.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": null,
+      "no_intent": false
+    },
+    {
+      "name": "host_canonical_negative_respectively",
+      "finding": "host-monetary-boundary",
+      "question": "What was GLOBEX net income for fiscal year 2030?",
+      "chunks": [
+        {
+          "id": "GLOBEX-FY2032#0001",
+          "doc_id": "GLOBEX-FY2032",
+          "ticker": "GLOBEX",
+          "fiscal_year": 2032,
+          "section": "Item 8",
+          "page": 7,
+          "page_label": "7",
+          "text": "Net income for fiscal years 2031 and 2030 was $97 million and -$83 million, respectively.",
+          "header": "GLOBEX 10-K FY2032"
+        }
+      ],
+      "expected": "-83000000",
+      "no_intent": false
+    }
+  ]
+}

@@ -1,0 +1,22 @@
+{
+  "version": 1,
+  "description": "SYNTHETIC offline fixture. ACME and values are invented; this is not audited SEC evidence.",
+  "questions": [
+    {
+      "id": "ACME-FY2024:net_income",
+      "ticker": "ACME",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "value": -45000000000,
+      "unit": "USD",
+      "evidence": {
+        "section": [
+          {
+            "chunk_id": "ACME-FY2025#0001",
+            "quote": "Fiscal year | 2024 | 2023\nNet income (USD millions) | (45,000) | 10"
+          }
+        ]
+      }
+    }
+  ]
+}

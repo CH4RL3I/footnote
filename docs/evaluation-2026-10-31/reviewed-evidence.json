@@ -1,0 +1,462 @@
+{
+  "version": 1,
+  "description": "Real SEC operational validation: 20 source-grounded agent-reviewed questions spanning five companies, two chunkings and signed JPM cash flow; checked by independent host before new model generation. Selected for complete year/metric/unit context, partial support labels only. Not human-audited, exhaustive, or held out.",
+  "questions": [
+    {
+      "id": "AAPL-FY2024:revenue",
+      "ticker": "AAPL",
+      "fiscal_year": 2024,
+      "metric": "revenue",
+      "value": 391035000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "AAPL-FY2025#0088",
+            "quote": "The following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nAmericas | $178,353 | 7% | $167,045 | 3% | $162,560\nEurope | 111,032 | 10% | 101,328 | 7% | 94,294\nGreater China | 64,377 | (4)% | 66,952 | (8)% | 72,559\nJapan | 28,703 | 15% | 25,052 | 3% | 24,257\nRest of Asia Pacific | 33,696 | 10% | 30,658 | 4% | 29,615\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          },
+          {
+            "chunk_id": "AAPL-FY2025#0089",
+            "quote": "The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\niPhone | $209,586 | 4% | $201,183 | \u2014% | $200,583\nMac | 33,708 | 12% | 29,984 | 2% | 29,357\niPad | 28,023 | 5% | 26,694 | (6)% | 28,300\nWearables, Home and Accessories | 35,686 | (4)% | 37,005 | (7)% | 39,845\nServices (1) | 109,158 | 14% | 96,169 | 13% | 85,200\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "AAPL-FY2025#0108",
+            "quote": "The following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nAmericas | $178,353 | 7% | $167,045 | 3% | $162,560\nEurope | 111,032 | 10% | 101,328 | 7% | 94,294\nGreater China | 64,377 | (4)% | 66,952 | (8)% | 72,559\nJapan | 28,703 | 15% | 25,052 | 3% | 24,257\nRest of Asia Pacific | 33,696 | 10% | 30,658 | 4% | 29,615\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          },
+          {
+            "chunk_id": "AAPL-FY2025#0109",
+            "quote": "The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\niPhone | $209,586 | 4% | $201,183 | \u2014% | $200,583\nMac | 33,708 | 12% | 29,984 | 2% | 29,357\niPad | 28,023 | 5% | 26,694 | (6)% | 28,300\nWearables, Home and Accessories | 35,686 | (4)% | 37,005 | (7)% | 39,845\nServices (1) | 109,158 | 14% | 96,169 | 13% | 85,200\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL-FY2024:rd_expense",
+      "ticker": "AAPL",
+      "fiscal_year": 2024,
+      "metric": "rd_expense",
+      "value": 31370000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "AAPL-FY2025#0092",
+            "quote": "Operating Expenses\nOperating expenses for 2025, 2024 and 2023 were as follows (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nResearch and development | $34,550 | 10% | $31,370 | 5% | $29,915"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "AAPL-FY2025#0111",
+            "quote": "Operating Expenses\nOperating expenses for 2025, 2024 and 2023 were as follows (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nResearch and development | $34,550 | 10% | $31,370 | 5% | $29,915"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL-FY2025:revenue",
+      "ticker": "AAPL",
+      "fiscal_year": 2025,
+      "metric": "revenue",
+      "value": 416161000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "AAPL-FY2025#0088",
+            "quote": "The following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nAmericas | $178,353 | 7% | $167,045 | 3% | $162,560\nEurope | 111,032 | 10% | 101,328 | 7% | 94,294\nGreater China | 64,377 | (4)% | 66,952 | (8)% | 72,559\nJapan | 28,703 | 15% | 25,052 | 3% | 24,257\nRest of Asia Pacific | 33,696 | 10% | 30,658 | 4% | 29,615\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          },
+          {
+            "chunk_id": "AAPL-FY2025#0089",
+            "quote": "The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\niPhone | $209,586 | 4% | $201,183 | \u2014% | $200,583\nMac | 33,708 | 12% | 29,984 | 2% | 29,357\niPad | 28,023 | 5% | 26,694 | (6)% | 28,300\nWearables, Home and Accessories | 35,686 | (4)% | 37,005 | (7)% | 39,845\nServices (1) | 109,158 | 14% | 96,169 | 13% | 85,200\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "AAPL-FY2025#0108",
+            "quote": "The following table shows net sales by reportable segment for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nAmericas | $178,353 | 7% | $167,045 | 3% | $162,560\nEurope | 111,032 | 10% | 101,328 | 7% | 94,294\nGreater China | 64,377 | (4)% | 66,952 | (8)% | 72,559\nJapan | 28,703 | 15% | 25,052 | 3% | 24,257\nRest of Asia Pacific | 33,696 | 10% | 30,658 | 4% | 29,615\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          },
+          {
+            "chunk_id": "AAPL-FY2025#0109",
+            "quote": "The following table shows net sales by category for 2025, 2024 and 2023 (dollars in millions):\n2025 | Change | 2024 | Change | 2023\niPhone | $209,586 | 4% | $201,183 | \u2014% | $200,583\nMac | 33,708 | 12% | 29,984 | 2% | 29,357\niPad | 28,023 | 5% | 26,694 | (6)% | 28,300\nWearables, Home and Accessories | 35,686 | (4)% | 37,005 | (7)% | 39,845\nServices (1) | 109,158 | 14% | 96,169 | 13% | 85,200\nTotal net sales | $416,161 | 6% | $391,035 | 2% | $383,285"
+          }
+        ]
+      }
+    },
+    {
+      "id": "AAPL-FY2025:rd_expense",
+      "ticker": "AAPL",
+      "fiscal_year": 2025,
+      "metric": "rd_expense",
+      "value": 34550000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "AAPL-FY2025#0092",
+            "quote": "Operating Expenses\nOperating expenses for 2025, 2024 and 2023 were as follows (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nResearch and development | $34,550 | 10% | $31,370 | 5% | $29,915"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "AAPL-FY2025#0111",
+            "quote": "Operating Expenses\nOperating expenses for 2025, 2024 and 2023 were as follows (dollars in millions):\n2025 | Change | 2024 | Change | 2023\nResearch and development | $34,550 | 10% | $31,370 | 5% | $29,915"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT-FY2025:revenue",
+      "ticker": "MSFT",
+      "fiscal_year": 2025,
+      "metric": "revenue",
+      "value": 281724000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "MSFT-FY2025#0123",
+            "quote": "SUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 | $245,122 | 15%\nGross margin | 193,893 | 171,008 | 13%\nOperating income | 128,528 | 109,433 | 17%\nNet income | 101,832 | 88,136 | 16%"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "MSFT-FY2025#0139",
+            "quote": "SUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 | $245,122 | 15%\nGross margin | 193,893 | 171,008 | 13%\nOperating income | 128,528 | 109,433 | 17%\nNet income | 101,832 | 88,136 | 16%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT-FY2025:net_income",
+      "ticker": "MSFT",
+      "fiscal_year": 2025,
+      "metric": "net_income",
+      "value": 101832000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "MSFT-FY2025#0123",
+            "quote": "SUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 | $245,122 | 15%\nGross margin | 193,893 | 171,008 | 13%\nOperating income | 128,528 | 109,433 | 17%\nNet income | 101,832 | 88,136 | 16%"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "MSFT-FY2025#0139",
+            "quote": "SUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2025 | 2024 | Percentage Change\nRevenue | $281,724 | $245,122 | 15%\nGross margin | 193,893 | 171,008 | 13%\nOperating income | 128,528 | 109,433 | 17%\nNet income | 101,832 | 88,136 | 16%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT-FY2026:revenue",
+      "ticker": "MSFT",
+      "fiscal_year": 2026,
+      "metric": "revenue",
+      "value": 331839000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "MSFT-FY2026#0123",
+            "quote": "SUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change\nRevenue | $331,839 | $281,724 | 18%"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "MSFT-FY2026#0141",
+            "quote": "SUMMARY RESULTS OF OPERATIONS\n(In millions, except percentages and per share amounts) | 2026 | 2025 | Percentage Change\nRevenue | $331,839 | $281,724 | 18%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "MSFT-FY2026:rd_expense",
+      "ticker": "MSFT",
+      "fiscal_year": 2026,
+      "metric": "rd_expense",
+      "value": 35562000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "MSFT-FY2026#0131",
+            "quote": "OPERATING EXPENSES\nResearch and Development\n(In millions, except percentages) | 2026 | 2025 | Percentage Change\nResearch and development | $35,562 | $32,488 | 9%"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "MSFT-FY2026#0148",
+            "quote": "OPERATING EXPENSES\nResearch and Development\n(In millions, except percentages) | 2026 | 2025 | Percentage Change\nResearch and development | $35,562 | $32,488 | 9%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "JPM-FY2024:net_income",
+      "ticker": "JPM",
+      "fiscal_year": 2024,
+      "metric": "net_income",
+      "value": 58471000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "JPM-FY2025#0159",
+            "quote": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\nAs of or for the year ended December 31, (in millions, except per share, ratio, employee data and where otherwise noted)\n2025 | 2024 | 2023\nSelected income statement data\nTotal net revenue | $182,447 | $177,556 | (g) | $158,104\nTotal noninterest expense | 95,640 | 91,797 | (g) | 87,172\nPre-provision profit (a) | 86,807 | 85,759 | 70,932\nProvision for credit losses | 14,212 | (e) | 10,678 | 9,320\nIncome before income tax expense | 72,595 | 75,081 | 61,612\nIncome tax expense | 15,547 | 16,610 | 12,060\nNet income | $57,048 | $58,471 | $49,552"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "JPM-FY2025#0156",
+            "quote": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\nAs of or for the year ended December 31, (in millions, except per share, ratio, employee data and where otherwise noted)\n2025 | 2024 | 2023\nSelected income statement data\nTotal net revenue | $182,447 | $177,556 | (g) | $158,104\nTotal noninterest expense | 95,640 | 91,797 | (g) | 87,172\nPre-provision profit (a) | 86,807 | 85,759 | 70,932\nProvision for credit losses | 14,212 | (e) | 10,678 | 9,320\nIncome before income tax expense | 72,595 | 75,081 | 61,612\nIncome tax expense | 15,547 | 16,610 | 12,060\nNet income | $57,048 | $58,471 | $49,552"
+          }
+        ]
+      }
+    },
+    {
+      "id": "JPM-FY2025:net_income",
+      "ticker": "JPM",
+      "fiscal_year": 2025,
+      "metric": "net_income",
+      "value": 57048000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "JPM-FY2025#0159",
+            "quote": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\nAs of or for the year ended December 31, (in millions, except per share, ratio, employee data and where otherwise noted)\n2025 | 2024 | 2023\nSelected income statement data\nTotal net revenue | $182,447 | $177,556 | (g) | $158,104\nTotal noninterest expense | 95,640 | 91,797 | (g) | 87,172\nPre-provision profit (a) | 86,807 | 85,759 | 70,932\nProvision for credit losses | 14,212 | (e) | 10,678 | 9,320\nIncome before income tax expense | 72,595 | 75,081 | 61,612\nIncome tax expense | 15,547 | 16,610 | 12,060\nNet income | $57,048 | $58,471 | $49,552"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "JPM-FY2025#0156",
+            "quote": "THREE-YEAR SUMMARY OF CONSOLIDATED FINANCIAL HIGHLIGHTS (unaudited)\nAs of or for the year ended December 31, (in millions, except per share, ratio, employee data and where otherwise noted)\n2025 | 2024 | 2023\nSelected income statement data\nTotal net revenue | $182,447 | $177,556 | (g) | $158,104\nTotal noninterest expense | 95,640 | 91,797 | (g) | 87,172\nPre-provision profit (a) | 86,807 | 85,759 | 70,932\nProvision for credit losses | 14,212 | (e) | 10,678 | 9,320\nIncome before income tax expense | 72,595 | 75,081 | 61,612\nIncome tax expense | 15,547 | 16,610 | 12,060\nNet income | $57,048 | $58,471 | $49,552"
+          }
+        ]
+      }
+    },
+    {
+      "id": "JPM-FY2024:operating_cash_flow",
+      "ticker": "JPM",
+      "fiscal_year": 2024,
+      "metric": "operating_cash_flow",
+      "value": -42012000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "JPM-FY2025#0198",
+            "quote": "(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "JPM-FY2025#0192",
+            "quote": "(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974"
+          }
+        ]
+      }
+    },
+    {
+      "id": "JPM-FY2025:operating_cash_flow",
+      "ticker": "JPM",
+      "fiscal_year": 2025,
+      "metric": "operating_cash_flow",
+      "value": -147782000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "JPM-FY2025#0198",
+            "quote": "(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "JPM-FY2025#0192",
+            "quote": "(in millions) | Year ended December 31,\n2025 | 2024 | 2023\nNet cash provided by/ (used in)\nOperating activities | $ (147,782) | $ (42,012) | $12,974"
+          }
+        ]
+      }
+    },
+    {
+      "id": "KO-FY2024:revenue",
+      "ticker": "KO",
+      "fiscal_year": 2024,
+      "metric": "revenue",
+      "value": 47061000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "KO-FY2025#0265",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "KO-FY2025#0312",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754"
+          }
+        ]
+      }
+    },
+    {
+      "id": "KO-FY2025:revenue",
+      "ticker": "KO",
+      "fiscal_year": 2025,
+      "metric": "revenue",
+      "value": 47941000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "KO-FY2025#0265",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "KO-FY2025#0312",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754"
+          }
+        ]
+      }
+    },
+    {
+      "id": "KO-FY2024:operating_income",
+      "ticker": "KO",
+      "fiscal_year": 2024,
+      "metric": "operating_income",
+      "value": 9992000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "KO-FY2025#0265",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "KO-FY2025#0312",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311"
+          }
+        ]
+      }
+    },
+    {
+      "id": "KO-FY2025:operating_income",
+      "ticker": "KO",
+      "fiscal_year": 2025,
+      "metric": "operating_income",
+      "value": 13762000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "KO-FY2025#0265",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "KO-FY2025#0312",
+            "quote": "THE COCA-COLA COMPANY AND SUBSIDIARIES\nCONSOLIDATED STATEMENTS OF INCOME\n(In millions except per share data)\nYear Ended December 31, | 2025 | 2024 | 2023\nNet Operating Revenues | $47,941 | $47,061 | $45,754\nCost of goods sold | 18,397 | 18,324 | 18,520\nGross Profit | 29,544 | 28,737 | 27,234\nSelling, general and administrative expenses | 14,521 | 14,582 | 13,972\nOther operating charges | 1,261 | 4,163 | 1,951\nOperating Income | 13,762 | 9,992 | 11,311"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NVDA-FY2025:revenue",
+      "ticker": "NVDA",
+      "fiscal_year": 2025,
+      "metric": "revenue",
+      "value": 130497000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "NVDA-FY2026#0202",
+            "quote": "NVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except per share data)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nRevenue | $215,938 | $130,497 | $60,922"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "NVDA-FY2026#0223",
+            "quote": "NVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except per share data)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nRevenue | $215,938 | $130,497 | $60,922"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NVDA-FY2026:revenue",
+      "ticker": "NVDA",
+      "fiscal_year": 2026,
+      "metric": "revenue",
+      "value": 215938000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "NVDA-FY2026#0202",
+            "quote": "NVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except per share data)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nRevenue | $215,938 | $130,497 | $60,922"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "NVDA-FY2026#0223",
+            "quote": "NVIDIA Corporation and Subsidiaries\nConsolidated Statements of Income\n(In millions, except per share data)\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | Jan 28, 2024\nRevenue | $215,938 | $130,497 | $60,922"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NVDA-FY2025:rd_expense",
+      "ticker": "NVDA",
+      "fiscal_year": 2025,
+      "metric": "rd_expense",
+      "value": 12914000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "NVDA-FY2026#0172",
+            "quote": "Operating Expenses\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | $ Change | % Change\n($ in millions)\nResearch and development | $18,497 | $12,914 | $5,583 | 43%"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "NVDA-FY2026#0187",
+            "quote": "Operating Expenses\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | $ Change | % Change\n($ in millions)\nResearch and development | $18,497 | $12,914 | $5,583 | 43%"
+          }
+        ]
+      }
+    },
+    {
+      "id": "NVDA-FY2026:rd_expense",
+      "ticker": "NVDA",
+      "fiscal_year": 2026,
+      "metric": "rd_expense",
+      "value": 18497000000.0,
+      "unit": "USD",
+      "evidence": {
+        "fixed": [
+          {
+            "chunk_id": "NVDA-FY2026#0172",
+            "quote": "Operating Expenses\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | $ Change | % Change\n($ in millions)\nResearch and development | $18,497 | $12,914 | $5,583 | 43%"
+          }
+        ],
+        "section": [
+          {
+            "chunk_id": "NVDA-FY2026#0187",
+            "quote": "Operating Expenses\nYear Ended\nJan 25, 2026 | Jan 26, 2025 | $ Change | % Change\n($ in millions)\nResearch and development | $18,497 | $12,914 | $5,583 | 43%"
+          }
+        ]
+      }
+    }
+  ]
+}

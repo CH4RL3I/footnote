@@ -1,0 +1,321 @@
+{
+  "run_date": "2026-10-29",
+  "question_count": 64,
+  "reviewed_count": 20,
+  "scoring_version": "signed-usd-v2",
+  "answering_version": "source-grounded-usd-v4",
+  "context_policy": "Company-filter top-100 ranked pool; six seeds plus immediate same-filing/Item neighbours, which may supply values, periods, scope and scales; all fallback model prompts capped at six chunks.",
+  "source_files_sha256": {
+    "src/filingqa/__init__.py": "193fa87b0ea512cd456ec6d516f43152e067c182cf7495df6af58c3c6eba9c73",
+    "src/filingqa/answer.py": "fe21b165a4ae2da47757fe412e7455edf34968d5fc375d1b578789b79061a1a9",
+    "src/filingqa/chunking.py": "6586f41361581d9e23241f86f0295415520121eaac12dba56668b87468f73456",
+    "src/filingqa/citations.py": "5c17f7f0b2793781b0d6b02f3440d5681f83b7ee8e3f7d96fc37e622c6db3df7",
+    "src/filingqa/cli.py": "6ffca38ad068bffc30afa905c04f2273f5edef8ce17d2c64f9ff5195ad7a4a64",
+    "src/filingqa/config.py": "da2d3aea02f9f9db7948ada98431e7a1fe7cfe08a97c4888507c8e7239f51d84",
+    "src/filingqa/corpus.py": "1ef7df96e689a6c118175463cea8ba0d12e6d173fe8b5d47c7c6bd342ea2b4c9",
+    "src/filingqa/edgar.py": "9a42516492f088f8923b0e76a18a636fd6cafebe95fc67c1c9707c7781b6e1a2",
+    "src/filingqa/embeddings.py": "86916878986db7fb9cd33b79d6a3223046f00130d7dbf30c4670e12a300ab672",
+    "src/filingqa/evaluate.py": "16c06e2d51e790b15bd4dedb9e219b3839e73bb7bc36317f441b8811d8ae3c8a",
+    "src/filingqa/evidence.py": "734d35386179da397d0a9822a44fe69797b357df10787eb1a3396f79c547f5a4",
+    "src/filingqa/generate.py": "89a37d4245fe342add28d39574929ed7a219f650586162306deba240c4590407",
+    "src/filingqa/goldset.py": "68a0ee14c9ac0bfe4054c1f3802bc7d39e88b3c7908df51f9793ee2770ec0925",
+    "src/filingqa/grounding.py": "edabc45e2a2cf36989ee8d0b5b2cd0870784a89fdbc3558c7564e573f5c5c718",
+    "src/filingqa/index.py": "1181428b82e3efbdcba22c744ab3fe9bf351fecd642b2d9684dd6f88ee810961",
+    "src/filingqa/metrics.py": "a4eff6c0fa57de9d68cb0e0cc4a22bc458cb7369472db325060ff6773f82ea0f",
+    "src/filingqa/numfmt.py": "f9ce1eea24ad1518cf622987cb13df9fccc839d73ab4dd2b43f65a9a63b61f31",
+    "src/filingqa/parse.py": "79876aeaf48dcf97dd43d8ac3717b47433e1544bb02548369f636ea4b2fb1f1e",
+    "src/filingqa/qualitative.py": "e0b38863bc9afcf55964f66deda3b91fef1826e08884e997c6908a1f4fbe7c54",
+    "src/filingqa/retrieval.py": "9c9aeb519e7832fce8a6e192ca1a08972fa10bf0650edbbf3a030a75ad419cbd"
+  },
+  "reviewed_manifest_sha256": "b00c24a71d6bc3e60b43f51b4b42da07587629d3bf0f8efd5628096e55b6ffa2",
+  "model": {
+    "name": "llama3.2:latest",
+    "model": "llama3.2:latest",
+    "modified_at": "2026-10-28T18:21:20.18645086Z",
+    "size": 2019393189,
+    "digest": "a80c4f17acd55265feec403c7aef86be0c25983ab279d83f3bcd3abbcb5b8b72",
+    "details": {
+      "parent_model": "",
+      "format": "gguf",
+      "family": "llama",
+      "families": [
+        "llama"
+      ],
+      "parameter_size": "3.2B",
+      "quantization_level": "Q4_K_M",
+      "context_length": 131072,
+      "embedding_length": 3072,
+      "runner": "ggml"
+    },
+    "capabilities": [
+      "completion",
+      "tools"
+    ]
+  },
+  "python": "3.13.15",
+  "packages": {
+    "numpy": "2.5.3",
+    "httpx": "0.28.1",
+    "rank-bm25": "0.2.2",
+    "beautifulsoup4": "4.15.0",
+    "matplotlib": "3.11.2"
+  },
+  "actual_model_calls": 79,
+  "answer_method_counts": {
+    "model-fallback": 79,
+    "source-extracted": 89
+  },
+  "source_citation_policy": "Whole supplied neighbouring context groups, not minimal supporting chunks. Per-method citation counts/rates are separated in results.json and results.md; oracle label hits may follow from the seed labels being included.",
+  "corpus_artifacts": [
+    {
+      "path": "data/raw/AAPL-FY2024_0000320193-24-000123.htm",
+      "bytes": 1503898,
+      "sha256": "f84f0680ee09196754f375669a1f96282f722f043e4d5246385630fa97bfb582"
+    },
+    {
+      "path": "data/raw/AAPL-FY2025_0000320193-25-000079.htm",
+      "bytes": 1520326,
+      "sha256": "484550f4d42cee2cd777bced115685226f23a8d1aca30873f9b56cc16c38baec"
+    },
+    {
+      "path": "data/raw/JPM-FY2024_0000019617-25-000270.htm",
+      "bytes": 12849298,
+      "sha256": "de09360096788325fe34a74efaeac6de579d353598889196a4dba18546e09dc3"
+    },
+    {
+      "path": "data/raw/JPM-FY2025_0001628280-26-008131.htm",
+      "bytes": 12927443,
+      "sha256": "7c7078318a9f04f94b12bd00a477b41da01dd961a55a731207b0e4b7312651ba"
+    },
+    {
+      "path": "data/raw/KO-FY2024_0000021344-25-000011.htm",
+      "bytes": 3931025,
+      "sha256": "7c1940d7639834f69257ad5facb1996deb80150df348aa4f456f2a7970af85dd"
+    },
+    {
+      "path": "data/raw/KO-FY2025_0001628280-26-010047.htm",
+      "bytes": 3758258,
+      "sha256": "1193387057de7c9c75ea66783c16e52916cfc8d3afe0622421f2f43f026a335e"
+    },
+    {
+      "path": "data/raw/MSFT-FY2025_0000950170-25-100235.htm",
+      "bytes": 8158185,
+      "sha256": "deb039075e6a175bc3bc837ca9a3b9012e27c15f338eee9c658ba4ce0e7f18f8"
+    },
+    {
+      "path": "data/raw/MSFT-FY2026_0001193125-26-323660.htm",
+      "bytes": 8585619,
+      "sha256": "a6bd6c2093979866d0f450d59c6f2246b693524623ef9a5ea19e80369f13a4de"
+    },
+    {
+      "path": "data/raw/NVDA-FY2025_0001045810-25-000023.htm",
+      "bytes": 2067638,
+      "sha256": "b8b30a279cdb1b711e5c0b5013d26a08b4f72b61aab3e72f9d92d307c243b54c"
+    },
+    {
+      "path": "data/raw/NVDA-FY2026_0001045810-26-000021.htm",
+      "bytes": 1967934,
+      "sha256": "8fc122e2d511d9c33a27795db254eb2d1cab2153adb697631760d9b04a7e90fb"
+    },
+    {
+      "path": "data/raw/companyfacts_AAPL.json",
+      "bytes": 3789099,
+      "sha256": "73a86c6aedc31f77cac2ea4df5f80f0b3bd7e6eb58bb4e01444fbedf3afb9c43"
+    },
+    {
+      "path": "data/raw/companyfacts_JPM.json",
+      "bytes": 7960545,
+      "sha256": "c6e8f825f0533964c99352d3b51010f2a192b089bdd5718c0d885943aef8efef"
+    },
+    {
+      "path": "data/raw/companyfacts_KO.json",
+      "bytes": 5028478,
+      "sha256": "53d363a9aa3071406cda9857654358f4dca42e174a1defb8cc1ce9ad2a4c9e40"
+    },
+    {
+      "path": "data/raw/companyfacts_MSFT.json",
+      "bytes": 4881196,
+      "sha256": "f8aae2965b20ad0df44bdf7ccbedf797d275b6b8dc030154a7a311361bb7246f"
+    },
+    {
+      "path": "data/raw/companyfacts_NVDA.json",
+      "bytes": 4092966,
+      "sha256": "19ef503a5770f5660964b3c3aea6937579d9b359da344afe6a9adf59c63d26ff"
+    },
+    {
+      "path": "data/parsed/AAPL-FY2024.json",
+      "bytes": 243922,
+      "sha256": "f0fb9d7d814e1b497b21ff364efbc10a83f4d6318b1d9f697755da5b1882e730"
+    },
+    {
+      "path": "data/parsed/AAPL-FY2025.json",
+      "bytes": 246031,
+      "sha256": "fbc4c2d5375da0c2f844c2f1d7752fda4f9c0ab967f6861876ceec35ad40ef83"
+    },
+    {
+      "path": "data/parsed/JPM-FY2024.json",
+      "bytes": 1498522,
+      "sha256": "452fe554febd132f173a9476b620493ce2b54648938e2b722b73e9e689fe911e"
+    },
+    {
+      "path": "data/parsed/JPM-FY2025.json",
+      "bytes": 1464699,
+      "sha256": "e07721f2705f3b5b61b253c252cad989c7b2242af91c4f375494ad93b3d70143"
+    },
+    {
+      "path": "data/parsed/KO-FY2024.json",
+      "bytes": 689141,
+      "sha256": "a5835c968bcbcdee63a993260eb7f48d9a60e90d17a6d94b4e45caba40ad1292"
+    },
+    {
+      "path": "data/parsed/KO-FY2025.json",
+      "bytes": 686167,
+      "sha256": "280cecec33df1e2fb5e577f59d3e36f14a36b805d84bebfb468d01c51453cba4"
+    },
+    {
+      "path": "data/parsed/MSFT-FY2025.json",
+      "bytes": 378204,
+      "sha256": "4a20700c8db2992f6af0be7c56c8752357edea39ed504fe920103a06061d151b"
+    },
+    {
+      "path": "data/parsed/MSFT-FY2026.json",
+      "bytes": 389304,
+      "sha256": "d2861e7d4a25752162bfce80340a9fb7a510b1b57fbd812eab9ed4591cb12e1b"
+    },
+    {
+      "path": "data/parsed/NVDA-FY2025.json",
+      "bytes": 404944,
+      "sha256": "52e0f9aa9967e4409f4aec2245d74aa42a64b10e05edcdc364bb012b3bfbb761"
+    },
+    {
+      "path": "data/parsed/NVDA-FY2026.json",
+      "bytes": 394844,
+      "sha256": "d9b6e8bdd58c77be0657bae14a2e99308837df73e8ab04bfb1e7d7177ef03b25"
+    },
+    {
+      "path": "data/parsed/manifest.json",
+      "bytes": 1788,
+      "sha256": "ee47d9b1e48686a42e29565e8826c94cb0d8ceb0996ba669edb2f16f9b9690d5"
+    },
+    {
+      "path": "data/index/fixed/chunks.jsonl",
+      "bytes": 7668372,
+      "sha256": "5fd81eb4d194702729e46b05791a2ba6e4e8ff63a59c5fccb34e4ee193fc4553"
+    },
+    {
+      "path": "data/index/fixed/vectors.npy",
+      "bytes": 14472320,
+      "sha256": "941237b1300ca636ae7422b25c79b857c58b9835437d3a97b02b81e04ceac94c"
+    },
+    {
+      "path": "data/index/section/chunks.jsonl",
+      "bytes": 6662873,
+      "sha256": "1db6060e5e8fdab70b02f6fcf57e3093422567cadc2c525dfb9d43fe5931e013"
+    },
+    {
+      "path": "data/index/section/vectors.npy",
+      "bytes": 14837888,
+      "sha256": "1ae0fd9b8a6a334fa8663ef3eda8457d46749cb01d62e0f07d6fe6a7f07e43ec"
+    }
+  ],
+  "filings": [
+    {
+      "ticker": "AAPL",
+      "cik": 320193,
+      "accession": "0000320193-25-000079",
+      "period_end": "2025-09-27",
+      "filed": "2025-10-31",
+      "primary_document": "aapl-20250927.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019325000079/aapl-20250927.htm"
+    },
+    {
+      "ticker": "AAPL",
+      "cik": 320193,
+      "accession": "0000320193-24-000123",
+      "period_end": "2024-09-28",
+      "filed": "2024-11-01",
+      "primary_document": "aapl-20240928.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320193/000032019324000123/aapl-20240928.htm"
+    },
+    {
+      "ticker": "MSFT",
+      "cik": 789019,
+      "accession": "0001193125-26-323660",
+      "period_end": "2026-06-30",
+      "filed": "2026-07-29",
+      "primary_document": "msft-20260630.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312526323660/msft-20260630.htm"
+    },
+    {
+      "ticker": "MSFT",
+      "cik": 789019,
+      "accession": "0000950170-25-100235",
+      "period_end": "2025-06-30",
+      "filed": "2025-07-30",
+      "primary_document": "msft-20250630.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000095017025100235/msft-20250630.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "cik": 1045810,
+      "accession": "0001045810-26-000021",
+      "period_end": "2026-01-25",
+      "filed": "2026-02-25",
+      "primary_document": "nvda-20260125.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm"
+    },
+    {
+      "ticker": "NVDA",
+      "cik": 1045810,
+      "accession": "0001045810-25-000023",
+      "period_end": "2025-01-26",
+      "filed": "2025-02-26",
+      "primary_document": "nvda-20250126.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581025000023/nvda-20250126.htm"
+    },
+    {
+      "ticker": "JPM",
+      "cik": 19617,
+      "accession": "0001628280-26-008131",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-13",
+      "primary_document": "jpm-20251231.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000162828026008131/jpm-20251231.htm"
+    },
+    {
+      "ticker": "JPM",
+      "cik": 19617,
+      "accession": "0000019617-25-000270",
+      "period_end": "2024-12-31",
+      "filed": "2025-02-14",
+      "primary_document": "jpm-20241231.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/19617/000001961725000270/jpm-20241231.htm"
+    },
+    {
+      "ticker": "KO",
+      "cik": 21344,
+      "accession": "0001628280-26-010047",
+      "period_end": "2025-12-31",
+      "filed": "2026-02-20",
+      "primary_document": "ko-20251231.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000162828026010047/ko-20251231.htm"
+    },
+    {
+      "ticker": "KO",
+      "cik": 21344,
+      "accession": "0000021344-25-000011",
+      "period_end": "2024-12-31",
+      "filed": "2025-02-20",
+      "primary_document": "ko-20241231.htm",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000002134425000011/ko-20241231.htm"
+    }
+  ],
+  "limits": [
+    "Development rerun on reused questions and corpus; not held out.",
+    "Reviewed labels were authored/cross-checked by agents, not human-audited.",
+    "Reviewed support labels are partial; label-hit rates are not citation precision.",
+    "Company-filtered/enriched contexts and source extraction change the pipeline; this is not a controlled improvement in llama3.2.",
+    "Unsupported numeric layouts remain explicitly unverified model fallback; failures are preserved.",
+    "Runs overlapped on a shared local Ollama service; latency includes scheduling/load."
+  ]
+}

@@ -71,7 +71,15 @@ def load_index(chunking: str) -> Index:
     out = _dir(chunking)
     if not (out / "chunks.jsonl").exists():
         raise SystemExit(f"No index for '{chunking}'. Run `filingqa index` first.")
-    chunks = [Chunk(**json.loads(x)) for x in (out / "chunks.jsonl").read_text().splitlines()]
+    chunks = []
+    for line in (out / "chunks.jsonl").read_text().splitlines():
+        data = json.loads(line)
+        data.setdefault("chunking_strategy", chunking)
+        # Legacy windows lack provenance. Only multi-line section chunks are known whole lines.
+        default = True if chunking == "section" and "\n" in data["text"] else None
+        data.setdefault("starts_at_line_boundary", default)
+        data.setdefault("ends_at_line_boundary", default)
+        chunks.append(Chunk(**data))
     vec_path = out / "vectors.npy"
     vectors = np.load(vec_path) if vec_path.exists() else None
     return Index(chunking, chunks, vectors, {c.id: c for c in chunks})

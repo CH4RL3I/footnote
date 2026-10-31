@@ -32,6 +32,9 @@ class Chunk:
     page_label: str  # printed page number when detected
     text: str
     header: str
+    starts_at_line_boundary: bool | None = True
+    ends_at_line_boundary: bool | None = True
+    chunking_strategy: str | None = None
 
     @property
     def index_text(self) -> str:
@@ -54,14 +57,23 @@ def section_title(section: str) -> str:
     return f"{section} {ITEM_TITLES[key]}" if key in ITEM_TITLES and section != key else section
 
 
-def _make(doc: ParsedFiling, n: int, section: str, page: int, text: str, with_section: bool):
+def _make(
+    doc: ParsedFiling,
+    n: int,
+    section: str,
+    page: int,
+    text: str,
+    with_section: bool,
+    starts: bool = True,
+    ends: bool = True,
+):
     ticker, fy = doc.doc_id.split("-FY")
     head = f"{_company(ticker)} ({ticker}) 10-K FY{fy}"
     if with_section:
         head += f", {section_title(section)}"
     return Chunk(
         f"{doc.doc_id}#{n:04d}", doc.doc_id, ticker, int(fy), section, page,
-        doc.page_label(page), text, head,
+        doc.page_label(page), text, head, starts, ends, "section" if with_section else "fixed",
     )  # fmt: skip
 
 
@@ -80,7 +92,19 @@ def fixed_chunks(
         text = "".join(
             ("\n" if s and i else " " if i else "") + w for i, (w, s, _, _) in enumerate(window)
         )
-        out.append(_make(doc, len(out), window[0][3], window[0][2], text, with_section=False))
+        end = start + len(window)
+        out.append(
+            _make(
+                doc,
+                len(out),
+                window[0][3],
+                window[0][2],
+                text,
+                with_section=False,
+                starts=window[0][1],
+                ends=end == len(words) or words[end][1],
+            )
+        )
         if start + size >= len(words):
             break
     return out
@@ -91,10 +115,12 @@ def section_chunks(doc: ParsedFiling, size: int = CHUNK_WORDS) -> list[Chunk]:
     buf: list[str] = []
     buf_words, buf_page, buf_section = 0, 0, ""
 
-    def flush() -> None:
+    def flush(starts: bool = True, ends: bool = True) -> None:
         nonlocal buf, buf_words
         if buf:
-            out.append(_make(doc, len(out), buf_section, buf_page, "\n".join(buf), True))
+            out.append(
+                _make(doc, len(out), buf_section, buf_page, "\n".join(buf), True, starts, ends)
+            )
         buf, buf_words = [], 0
 
     for ln in doc.lines:
@@ -106,7 +132,7 @@ def section_chunks(doc: ParsedFiling, size: int = CHUNK_WORDS) -> list[Chunk]:
             flush()
             for i in range(0, len(pieces), size):
                 buf, buf_words, buf_page = [" ".join(pieces[i : i + size])], size, ln.page
-                flush()
+                flush(starts=i == 0, ends=i + size >= len(pieces))
             continue
         if buf_words + len(pieces) > size:
             flush()

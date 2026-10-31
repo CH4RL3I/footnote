@@ -1,0 +1,202 @@
+[
+ {
+  "id": "AAPL-FY2024:revenue",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Apple's total revenue for fiscal year 2024?",
+  "value": 391035000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2024:rd_expense",
+  "ticker": "AAPL",
+  "fiscal_year": 2024,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Apple spend on research and development in fiscal year 2024?",
+  "value": 31370000000.0,
+  "accession": "0000320193-24-000123"
+ },
+ {
+  "id": "AAPL-FY2025:revenue",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Apple's total revenue for fiscal year 2025?",
+  "value": 416161000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "AAPL-FY2025:rd_expense",
+  "ticker": "AAPL",
+  "fiscal_year": 2025,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Apple spend on research and development in fiscal year 2025?",
+  "value": 34550000000.0,
+  "accession": "0000320193-25-000079"
+ },
+ {
+  "id": "JPM-FY2024:net_income",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was JPMorgan Chase's net income for fiscal year 2024?",
+  "value": 58471000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2024:operating_cash_flow",
+  "ticker": "JPM",
+  "fiscal_year": 2024,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2024?",
+  "value": -42012000000.0,
+  "accession": "0000019617-25-000270"
+ },
+ {
+  "id": "JPM-FY2025:net_income",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was JPMorgan Chase's net income for fiscal year 2025?",
+  "value": 57048000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "JPM-FY2025:operating_cash_flow",
+  "ticker": "JPM",
+  "fiscal_year": 2025,
+  "metric": "operating_cash_flow",
+  "tag": "NetCashProvidedByUsedInOperatingActivities",
+  "question": "What was JPMorgan Chase's net cash provided by operating activities in fiscal year 2025?",
+  "value": -147782000000.0,
+  "accession": "0001628280-26-008131"
+ },
+ {
+  "id": "KO-FY2024:revenue",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was Coca-Cola's total revenue for fiscal year 2024?",
+  "value": 47061000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2024:operating_income",
+  "ticker": "KO",
+  "fiscal_year": 2024,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Coca-Cola's operating income for fiscal year 2024?",
+  "value": 9992000000.0,
+  "accession": "0000021344-25-000011"
+ },
+ {
+  "id": "KO-FY2025:revenue",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was Coca-Cola's total revenue for fiscal year 2025?",
+  "value": 47941000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "KO-FY2025:operating_income",
+  "ticker": "KO",
+  "fiscal_year": 2025,
+  "metric": "operating_income",
+  "tag": "OperatingIncomeLoss",
+  "question": "What was Coca-Cola's operating income for fiscal year 2025?",
+  "value": 13762000000.0,
+  "accession": "0001628280-26-010047"
+ },
+ {
+  "id": "MSFT-FY2025:revenue",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Microsoft's total revenue for fiscal year 2025?",
+  "value": 281724000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2025:net_income",
+  "ticker": "MSFT",
+  "fiscal_year": 2025,
+  "metric": "net_income",
+  "tag": "NetIncomeLoss",
+  "question": "What was Microsoft's net income for fiscal year 2025?",
+  "value": 101832000000.0,
+  "accession": "0000950170-25-100235"
+ },
+ {
+  "id": "MSFT-FY2026:revenue",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "revenue",
+  "tag": "RevenueFromContractWithCustomerExcludingAssessedTax",
+  "question": "What was Microsoft's total revenue for fiscal year 2026?",
+  "value": 331839000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "MSFT-FY2026:rd_expense",
+  "ticker": "MSFT",
+  "fiscal_year": 2026,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did Microsoft spend on research and development in fiscal year 2026?",
+  "value": 35562000000.0,
+  "accession": "0001193125-26-323660"
+ },
+ {
+  "id": "NVDA-FY2025:revenue",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was NVIDIA's total revenue for fiscal year 2025?",
+  "value": 130497000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2025:rd_expense",
+  "ticker": "NVDA",
+  "fiscal_year": 2025,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did NVIDIA spend on research and development in fiscal year 2025?",
+  "value": 12914000000.0,
+  "accession": "0001045810-25-000023"
+ },
+ {
+  "id": "NVDA-FY2026:revenue",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "revenue",
+  "tag": "Revenues",
+  "question": "What was NVIDIA's total revenue for fiscal year 2026?",
+  "value": 215938000000.0,
+  "accession": "0001045810-26-000021"
+ },
+ {
+  "id": "NVDA-FY2026:rd_expense",
+  "ticker": "NVDA",
+  "fiscal_year": 2026,
+  "metric": "rd_expense",
+  "tag": "ResearchAndDevelopmentExpense",
+  "question": "How much did NVIDIA spend on research and development in fiscal year 2026?",
+  "value": 18497000000.0,
+  "accession": "0001045810-26-000021"
+ }
+]
